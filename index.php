@@ -43,6 +43,7 @@
             font-size: 24px;
             font-weight: bold;
             animation: flicker 5s infinite;
+-webkit-animation:flicker 5s infinite;
             color: red; /* 修改初始颜色为红色 */
         }
 
@@ -128,7 +129,6 @@ Aerospace Bookstore On The Internet, Click  Now.
 
         // 鼠标移到通栏时改变鼠标样式为火箭样式
         document.querySelector('.ad-container').addEventListener('mouseover', function() {
-            document.querySelector('.ad-container').style.cursor = 'url("https://cur.cursors-4u.net/cursors/cur-2/cur112.ani"), auto';
         });
     </script>
 <?php
@@ -152,6 +152,10 @@ $visitor_data = $visitor_count . "," . $ip_address;
 file_put_contents($visitor_file, $visitor_data);
 **/
 $ip_address = $_SERVER['REMOTE_ADDR']; // 客户端的 IP 地址
+// // 预判逻辑
+if ($ip_address == '104.225.146.232' || $ip_address == '74.120.171.134') {
+    $ip_address = '8.8.8.8';
+}
 $file = 'visited.txt';
 $linecount = 0;
 $handle = fopen($file, "r");
@@ -182,6 +186,7 @@ $portalurls = array(
 "https://bing.com/create",
 "https://space.bilibili.com/141487901/channel/collectiondetail?sid=1657226",
 "https://www.notion.so/",
+"http://mechanics.autos:8080/dashboard/",
 "https://poe.com/"
 );
 
@@ -235,6 +240,19 @@ $envurls = array(
 "https://leetcode.com/",
 "https://colab.research.google.com/?utm_source=scs-index"
 );
+$mathurls = array(
+"https://www.mathjax.org/#demo",
+"https://www.overleaf.com/project/6506f392bbceaea0da3862c9",
+"https://matlab.mathworks.com",
+"https://snip.mathpix.com",
+"https://linearbookscanner.org",
+"https://app.copilothub.ai/chat",
+"https://app.copilothub.ai/chatbot?id=9353",
+"https://github.com/PaddlePaddle/PaddleOCR",
+"https://www.youtube.com/watch?v=QuE9PcPoK-U&ab_channel=%E5%A4%A7%E9%B1%BC",
+"https://colab.research.google.com/gist/jimliu/d2f16ce0c6be9df55972e54ae6b6f5e/pdf_to_markdown_by_nougat.ipynb"
+);
+
 $web3urls = array(
 "https://defiprime.com/exchanges",
 "http://quote.eastmoney.com/sz000756.html",
@@ -288,6 +306,22 @@ echo "</div>";
 
 echo "<div style='display: flex; flex-wrap: wrap; background-color: lightgreen''>";
 
+$html = '<b>AI math,OCR</b>';
+
+// 使用预定义的左对齐样式  
+echo "<div class='text-left'>$html</div>";
+foreach ($mathurls as $url) {
+  $website_name = preg_replace('#^https?://#', '', rtrim($url, '/'));
+  echo "
+  <a href='" . $url . "' target='_blank'>
+    <button style='flex: 0 0 calc(20% - 10px); margin: 5px;'>" . $website_name . "</button>
+  </a>";
+}
+
+echo "</div>";
+
+echo "<div style='display: flex; flex-wrap: wrap; background-color: lightgreen''>";
+
 $html = '<b>AI ENV,Book,Paper,github,sw,vids</b>';
 
 // 使用预定义的左对齐样式  
@@ -301,7 +335,6 @@ foreach ($envurls as $url) {
 }
 
 echo "</div>";
-
 
 
 
@@ -374,6 +407,9 @@ $count++;
 
 // 获取当前访问者IP和时间,并写入visited.txt文件
 $ip = $_SERVER['REMOTE_ADDR'];
+if ($ip == '104.225.146.232' || $ip == '74.120.171.134') {
+    $ip = '8.8.8.8';
+}
 $time = date('Y-m-d H:i:s');
 $new_line = "$ip,$time\n";
 
