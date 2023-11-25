@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <html>
+<a class="weatherwidget-io" href="https://forecast7.com/en/39d91116d66/tongzhou/" data-label_1="TONGZHOU" data-label_2="WEATHER" data-theme="original" >TONGZHOU WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<a class="weatherwidget-io" href="https://forecast7.com/en/48d862d35/paris/" data-label_1="PARIS" data-label_2="WEATHER" data-theme="original" >PARIS WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<a class="weatherwidget-io" href="https://forecast7.com/en/37d39n122d08/mountain-view/" data-label_1="MOUNTAIN VIEW" data-label_2="WEATHER" data-theme="original" >MOUNTAIN VIEW WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<a class="weatherwidget-io" href="https://forecast7.com/en/29d99122d21/zhoushan/" data-label_1="ZHOUSHAN" data-label_2="WEATHER" data-theme="original" >ZHOUSHAN WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
 <head>
     <title>AI网站一网打尽！</title>
     <style>
@@ -182,11 +198,18 @@ $portalurls = array(
 "https://chat.openai.com/chat",
 "https://app.slack.com/client/T053CFKCJVA/D053CHVF3T6",
 "https://bard.google.com/?hl=en",
+"https://copilot.microsoft.com/",
 "https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx",
 "https://bing.com/create",
 "https://space.bilibili.com/141487901/channel/collectiondetail?sid=1657226",
 "https://www.notion.so/",
 "http://mechanics.autos:8080/dashboard/",
+"http://127.0.0.1:7860/",
+"https://github.com/oobabooga/text-generation-webui",
+"https://www.youtube.com/watch?v=7pdEK9ckDQ8&ab_channel=AemonAlgiz",
+"https://shop.pockyt.io/pc/goodsDetail/vc1aYhc/App%20Store%20&%20iTunes%20USA/all",
+"https://chat.openai.com/g/g-eB0gYHsdK-ramarujangpt",
+"https://book.kongfz.com/396112/6486614140/",
 "https://poe.com/"
 );
 
@@ -214,10 +237,14 @@ $envurls = array(
 "https://colab.research.google.com/github/camenduru/text-generation-webui-colab/blob/main/vicuna-13b-GPTQ-4bit-128g.ipynb",
 'https://arxiv.org/pdf/1706.03762.pdf',
 "https://arxiv.org/pdf/2305.15408.pdf",
+"/https://arxiv.org/pdf/2305.14314.pdf",
 "https://github.com/exacity/deeplearningbook-chinese",
 "https://github.com/huggingface/transformers/blob/main/README_zh-hans.md",
 "https://github.com/THUDM/ChatGLM-6B",
 "https://github.com/artidoro/qlora",
+"https://www.youtube.com/watch?v=Us5ZFp16PaU&ab_channel=SamWitteveen",
+"https://github.com/ggerganov/llama.cpp",
+"https://github.com/ymcui/Chinese-LLaMA-Alpaca-2/wiki/text-generation-webui_zh",
 "https://twitter.com/Tim_Dettmers/status/1661379354507476994",
 "https://cloud.tencent.com/developer/article/2280193?areaSource=106005.17",
 "https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/2/guidelines",
@@ -226,6 +253,7 @@ $envurls = array(
 "https://www.mathjax.org/#demo",
 "https://workbench.cloud.tencent.com/rdp?region=na-siliconvalley&instanceId=lhins-3g1ad311&source=lighthouse",
 "https://snip.mathpix.com/",
+"https://github.com/rangaeeeee/books-mir-mathematics/tree/master",
 "https://www.chatpdf.com/",
 "http://lib.shutong121.com/",
 "https://github.com/f/awesome-chatgpt-prompts/",
@@ -235,7 +263,7 @@ $envurls = array(
 "https://www.youtube.com/watch?v=s4jtkzHhLzY&t=256s",
 "https://ap.www.namecheap.com/",
 "https://sci-hub.se/",
-"https://zlibsearch.1kbtool.com/",
+"https://zh.zlibrary-global.se/",
 "https://zlibrary.to/",
 "https://leetcode.com/",
 "https://colab.research.google.com/?utm_source=scs-index"
