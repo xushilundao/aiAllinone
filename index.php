@@ -85,6 +85,8 @@
     </style>
 </head>
 <body>
+<iframe src="donation.html" style="width: 100%; height: 100px; border: 0;"></iframe>
+
     <!-- 广告容器 -->
     <div id="adContainer">
         <!-- 广告文本 -->
@@ -196,10 +198,11 @@ echo "<font size='6' face='楷体' color = 'Red'> ,you are the " . $linecount . 
 $portalurls = array(
 "https://claude.ai/chats",
 "https://chat.openai.com/chat",
-"https://app.slack.com/client/T053CFKCJVA/D053CHVF3T6",
-"https://bard.google.com/?hl=en",
 "https://copilot.microsoft.com/",
+"https://bard.google.com/?hl=en",
 "https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx",
+"https://chat.openai.com/g/g-eB0gYHsdK-ramarujangpt",
+"https://app.fireworks.ai/models",
 "https://bing.com/create",
 "https://space.bilibili.com/141487901/channel/collectiondetail?sid=1657226",
 "https://www.notion.so/",
@@ -210,6 +213,22 @@ $portalurls = array(
 "https://shop.pockyt.io/pc/goodsDetail/vc1aYhc/App%20Store%20&%20iTunes%20USA/all",
 "https://chat.openai.com/g/g-eB0gYHsdK-ramarujangpt",
 "https://book.kongfz.com/396112/6486614140/",
+"https://paypal.me/spaceInfinite?country.x=C2&locale.x=zh_XC",
+"https://chrome.google.com/webstore/devconsole/673e7038-9b86-45a3-bd10-bd52bbedec70",
+"https://www.buyhub.xyz/stocks/",
+"https://github.com/BuilderIO/gpt-crawler",
+"https://colab.research.google.com/drive/1e6F-D8AXmp4dUtBmOSIsoaNCFvfwJtVw",
+"https://mp.weixin.qq.com/s/92ZGwQA0MSzkEf5k_DEd1g",
+"https://mp.weixin.qq.com/s/RuV_4lCQentq4kBr3fv08A",
+"https://github.com/microsoft/LoRA",
+"https://github.com/shadowsocks/ShadowsocksX-NG",
+"https://github.com/lewangdev/ShadowsocksX-NG-GostPlugin?tab=readme-ov-file",
+"https://mp.weixin.qq.com/s/NM9Oq3ASR9hqTqhJqpqjgA",
+"https://baoyu.io/translations/llm/many-options-for-running-mistral-models-in-your-terminal-using-llm",
+"https://twitter.com/xiaohuggg/status/1737683961428717693",
+"https://huggingface.co/chat",
+"https://huggingface.co/spaces/openskyml/mixtral-46.7b-chat",
+"https://replicate.com/kcaverly/dolphin-2.5-mixtral-8x7b-gguf",
 "https://poe.com/"
 );
 
@@ -228,9 +247,9 @@ $envurls = array(
 "https://huggingface.co/spaces/stabilityai/stable-diffusion",
 "https://thehackernews.com/",
 "https://drive.google.com/file/d/1VW7sxqMF_1egTDwUFEXJ8kicmsyaZyZB/view",
-"https://www.buyhub.xyz/pdf/TwitterMoodPredictsstockMarket2011.pdf",
+"https://www.buyhub.xyz/pdf/MathforDeepLearningWhatYouNeedtoUnderstandNeuralNetworks.pdf",
 "https://vitomag.com/science/cgljwv",
-"https://www.buyhub.xyz/pdf/CharuNeuralNetworksDL.pdf",
+"https://www.buyhub.xyz/pdf/DemidovichProblemsinmathematicalanalysis.pdf",
 "https://github.com/ginuerzh/gost",
 "https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor",
 "https://github.com/camenduru/text-generation-webui-colab",
@@ -283,6 +302,8 @@ $mathurls = array(
 
 $web3urls = array(
 "https://defiprime.com/exchanges",
+"https://www.coingecko.com/en/developers/dashboard",
+"https://coinmarketcap.com/api/",
 "http://quote.eastmoney.com/sz000756.html",
 "https://translate.google.com/?sl=en&tl=zh-CN&op=docs",
 "http://quote.eastmoney.com/sz002603.html",
@@ -318,7 +339,7 @@ $web3urls = array(
 "https://buyhub.xyz/wordpress"
 );
 
-echo "<div style='display: flex; flex-wrap: wrap; background-color: lightgreen''>";
+echo "<div id='portal' class='portal-section' style='display: flex; flex-wrap: wrap; background-color: lightgreen''>";
 
 echo "AI portal web sites";
 foreach ($portalurls as $url) {
