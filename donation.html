@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打赏作者</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #donationLink {
+            color: white;
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div id="donationLink">打赏作者一杯咖啡</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const donationLink = document.getElementById('donationLink');
+            donationLink.addEventListener('click', () => {
+                window.open('https://paypal.me/spaceInfinite?country.x=C2&locale.x=zh_XC', '_blank');
+            });
+
+            setInterval(() => {
+                donationLink.style.backgroundColor = getRandomColor();
+            }, 500);
+        });
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+</body>
+</html>
+
