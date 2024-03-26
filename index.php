@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html>
-<a class="weatherwidget-io" href="https://forecast7.com/en/39d91116d66/tongzhou/" data-label_1="TONGZHOU" data-label_2="WEATHER" data-theme="original" >TONGZHOU WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
-<a class="weatherwidget-io" href="https://forecast7.com/en/48d862d35/paris/" data-label_1="PARIS" data-label_2="WEATHER" data-theme="original" >PARIS WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
-<a class="weatherwidget-io" href="https://forecast7.com/en/37d39n122d08/mountain-view/" data-label_1="MOUNTAIN VIEW" data-label_2="WEATHER" data-theme="original" >MOUNTAIN VIEW WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
-<a class="weatherwidget-io" href="https://forecast7.com/en/29d99122d21/zhoushan/" data-label_1="ZHOUSHAN" data-label_2="WEATHER" data-theme="original" >ZHOUSHAN WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
 <head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            updatePrices();
+            setInterval(updatePrices, 600000); // 每60秒（1分钟）刷新一次
+        });
+
+        function updatePrices() {
+            $("#priceFrame").contents().find("#prices").load("get_prices.php");
+        }
+    </script>
     <title>AI网站一网打尽！</title>
     <style>
 .text-left {
@@ -27,7 +22,7 @@
             position: absolute;
             width: 520px;
             height: 30px;
-            background-color: yellow;
+            background-color: white;
             overflow: hidden;
             cursor: pointer;
         }
@@ -40,14 +35,14 @@
             line-height: 30px;
             font-size: 16px;
             text-align: center;
-            color: red;
+            color: black;
             white-space: nowrap;
         }
  /* 通栏广告样式 */
         .ad-container {
             width: 100%;
             height: 77px;
-            background-color: #ffd700; /* 修改背景色为金黄色 */
+            background-color: white; /* 修改背景色为金黄色 */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -58,40 +53,18 @@
         .ad-text {
             font-size: 24px;
             font-weight: bold;
-            animation: flicker 5s infinite;
--webkit-animation:flicker 5s infinite;
-            color: red; /* 修改初始颜色为红色 */
+            color: black; /* 修改初始颜色为红色 */
         }
 
         /* 文字闪烁动画 */
-        @keyframes flicker {
-            0%, 100% {
-                opacity: 1;
-                color: red; /* 修改颜色为红色 */
-            }
-            20% {
-                color: yellow; /* 随机颜色选择：黄色 */
-            }
-            40% {
-                color: blue; /* 随机颜色选择：蓝色 */
-            }
-            60% {
-                color: green; /* 随机颜色选择：绿色 */
-            }
-            80% {
-                color: purple; /* 随机颜色选择：紫色 */
-            }
-        }
     </style>
 </head>
 <body>
-<iframe src="donation.html" style="width: 100%; height: 100px; border: 0;"></iframe>
+<h1>加密货币价格每小时自动刷新</h1>
+    <iframe id="priceFrame" src="prices.html" width="100%" height="70"></iframe>
 
+<iframe src="https://shop.kongfz.com/396112/" width="100%" height="188px"></iframe> 
     <!-- 广告容器 -->
-    <div id="adContainer">
-        <!-- 广告文本 -->
-        <div id="adText">马斯克同志称赞为最专业的宇航书店</div>
-    </div>
 
     <script>
         // 获取广告容器和广告文本的 DOM 元素
@@ -133,11 +106,6 @@
         animate();
     </script>
 
-<div class="ad-container">
-        <div class="ad-text">
-Aerospace Bookstore On The Internet, Click  Now.
-        </div>
-    </div>
 
     <script>
         // 点击通栏广告跳转到指定 URL，并在新标签页打开链接
@@ -199,11 +167,17 @@ $portalurls = array(
 "https://claude.ai/chats",
 "https://chat.openai.com/chat",
 "https://copilot.microsoft.com/",
-"https://bard.google.com/?hl=en",
+"https://gemini.google.com/app",
+"https://ai-sfc.yunyoujun.cn/",
+"https://www.suno.ai/",
+"https://www.aminer.cn/",
+"https://www.connectedpapers.com",
+"https://www.vosviewer.com/",
 "https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx",
 "https://chat.openai.com/g/g-eB0gYHsdK-ramarujangpt",
 "https://app.fireworks.ai/models",
 "https://bing.com/create",
+"http://122.51.110.176/",
 "https://space.bilibili.com/141487901/channel/collectiondetail?sid=1657226",
 "https://www.notion.so/",
 "http://mechanics.autos:8080/dashboard/",
@@ -212,7 +186,7 @@ $portalurls = array(
 "https://www.youtube.com/watch?v=7pdEK9ckDQ8&ab_channel=AemonAlgiz",
 "https://shop.pockyt.io/pc/goodsDetail/vc1aYhc/App%20Store%20&%20iTunes%20USA/all",
 "https://chat.openai.com/g/g-eB0gYHsdK-ramarujangpt",
-"https://book.kongfz.com/396112/6486614140/",
+"https://book.kongfz.com/396112",
 "https://paypal.me/spaceInfinite?country.x=C2&locale.x=zh_XC",
 "https://chrome.google.com/webstore/devconsole/673e7038-9b86-45a3-bd10-bd52bbedec70",
 "https://www.buyhub.xyz/stocks/",
@@ -229,11 +203,23 @@ $portalurls = array(
 "https://huggingface.co/chat",
 "https://huggingface.co/spaces/openskyml/mixtral-46.7b-chat",
 "https://replicate.com/kcaverly/dolphin-2.5-mixtral-8x7b-gguf",
+"https://catjourney.life/",
+"https://colab.research.google.com/github/camenduru/MagicAnimate-colab/blob/main/MagicAnimate_colab.ipynb",
+"https://nn.labml.ai/transformers/index.html",
+"https://huggingface.co/spaces/TencentARC/PhotoMaker-Style",
+"https://github.com/pdf2htmlEX/pdf2htmlEX/releases",
+"https://mp.weixin.qq.com/s/2pt29rGV5Mb1GEvapZ8ZwA",
+"https://mp.weixin.qq.com/s/q81UMOzgdEWv3QDqRE7x1A",
+"https://mp.weixin.qq.com/s/RbLfJpsIeJlmDf4cXyBlUA",
+"https://mp.weixin.qq.com/s?__biz=MzkyNzU0MzQwOQ==&mid=2247483799&idx=1&sn=aacf1b61837f2129136cdbcd0005971c&chksm=c318c4ba7ffd2841d7101787a882130021410c98fe2c90f70d6a3859021cf3e50e896477e2d3&scene=132&exptype=timeline_recommend_article_extendread_samebiz&show_related_article=1&subscene=0&scene=132#wechat_redirect",
 "https://poe.com/"
+
 );
 
 $envurls = array(
 "https://drive.google.com/drive/quota",
+"https://osanseviero.github.io/hackerllama/blog/posts/random_transformer/",
+"https://github.com/openai/gpt-2",
 "https://www.onlineocr.net/",
 "https://sci-hub.se/",
 "https://libgen.is/",
@@ -425,7 +411,6 @@ setInterval(function(){
   document.getElementById("time_MOW").innerHTML = "当前莫斯科时间是 " + dt_MOW.toISOString().slice(0, 19).replace('T', ' ');
 }, 1000); 
 </script>
-<iframe src="https://shop.kongfz.com/396112/" width="100%" height="288px"></iframe> 
 <?php
 echo "请关注推特账号@CeoSpaceY";
 $visited_file = 'visited.txt';
