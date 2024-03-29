@@ -180,7 +180,7 @@ $portalurls = array(
 "http://122.51.110.176/",
 "https://space.bilibili.com/141487901/channel/collectiondetail?sid=1657226",
 "https://www.notion.so/",
-"http://mechanics.autos:8080/dashboard/",
+"http://mechanics.autos:8080",
 "http://127.0.0.1:7860/",
 "https://github.com/oobabooga/text-generation-webui",
 "https://www.youtube.com/watch?v=7pdEK9ckDQ8&ab_channel=AemonAlgiz",
