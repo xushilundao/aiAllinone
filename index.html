@@ -16,178 +16,207 @@
             flex-wrap: wrap;
             gap: 10px;
         }
-        .link-button {
+        .section {
             background-color: white;
             border: 1px solid #ddd;
             border-radius: 4px;
             padding: 10px;
-            text-align: center;
-            width: calc(25% - 20px);
+            width: calc(50% - 20px);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .link-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .link-list li {
+            margin-bottom: 5px;
+        }
+        .link-list a {
             text-decoration: none;
             color: #007bff;
         }
-        .link-button:hover {
-            background-color: #f0f0f0;
+        .link-list a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <h1>URL Navigation</h1>
     <div class="container">
-        <a class="link-button" href="https://code.jquery.com/jquery-3.6.0.min.js" target="_blank">https://code.jquery.com/jquery-3.6.0.min.js</a>
-        <a class="link-button" href="https://shop.kongfz.com/396112/" target="_blank">https://shop.kongfz.com/396112/</a>
-        <a class="link-button" href="https://shop.kongfz.com/396112/" target="_blank">https://shop.kongfz.com/396112/</a>
-        <a class="link-button" href="https://shop.kongfz.com/396112/" target="_blank">https://shop.kongfz.com/396112/</a>
-        <a class="link-button" href="https://claude.ai/chats" target="_blank">https://claude.ai/chats</a>
-        <a class="link-button" href="https://chat.openai.com/chat" target="_blank">https://chat.openai.com/chat</a>
-        <a class="link-button" href="https://copilot.microsoft.com/" target="_blank">https://copilot.microsoft.com/</a>
-        <a class="link-button" href="https://gemini.google.com/app" target="_blank">https://gemini.google.com/app</a>
-        <a class="link-button" href="https://ai-sfc.yunyoujun.cn/" target="_blank">https://ai-sfc.yunyoujun.cn/</a>
-        <a class="link-button" href="https://www.suno.ai/" target="_blank">https://www.suno.ai/</a>
-        <a class="link-button" href="https://www.aminer.cn/" target="_blank">https://www.aminer.cn/</a>
-        <a class="link-button" href="https://www.connectedpapers.com" target="_blank">https://www.connectedpapers.com</a>
-        <a class="link-button" href="https://www.vosviewer.com/" target="_blank">https://www.vosviewer.com/</a>
-        <a class="link-button" href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx" target="_blank">https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx</a>
-        <a class="link-button" href="https://chat.openai.com/g/g-eB0gYHsdK-ramarujangpt" target="_blank">https://chat.openai.com/g/g-eB0gYHsdK-ramarujangpt</a>
-        <a class="link-button" href="https://app.fireworks.ai/models" target="_blank">https://app.fireworks.ai/models</a>
-        <a class="link-button" href="https://bing.com/create" target="_blank">https://bing.com/create</a>
-        <a class="link-button" href="http://122.51.110.176/" target="_blank">http://122.51.110.176/</a>
-        <a class="link-button" href="https://space.bilibili.com/141487901/channel/collectiondetail?sid=1657226" target="_blank">https://space.bilibili.com/141487901/channel/collectiondetail?sid=1657226</a>
-        <a class="link-button" href="https://www.notion.so/" target="_blank">https://www.notion.so/</a>
-        <a class="link-button" href="http://mechanics.autos:8080/dashboard/" target="_blank">http://mechanics.autos:8080/dashboard/</a>
-        <a class="link-button" href="http://127.0.0.1:7860/" target="_blank">http://127.0.0.1:7860/</a>
-        <a class="link-button" href="https://github.com/oobabooga/text-generation-webui" target="_blank">https://github.com/oobabooga/text-generation-webui</a>
-        <a class="link-button" href="https://www.youtube.com/watch?v=7pdEK9ckDQ8&ab_channel=AemonAlgiz" target="_blank">https://www.youtube.com/watch?v=7pdEK9ckDQ8&ab_channel=AemonAlgiz</a>
-        <a class="link-button" href="https://shop.pockyt.io/pc/goodsDetail/vc1aYhc/App%20Store%20&%20iTunes%20USA/all" target="_blank">https://shop.pockyt.io/pc/goodsDetail/vc1aYhc/App%20Store%20&%20iTunes%20USA/all</a>
-        <a class="link-button" href="https://chat.openai.com/g/g-eB0gYHsdK-ramarujangpt" target="_blank">https://chat.openai.com/g/g-eB0gYHsdK-ramarujangpt</a>
-        <a class="link-button" href="https://book.kongfz.com/396112" target="_blank">https://book.kongfz.com/396112</a>
-        <a class="link-button" href="https://paypal.me/spaceInfinite?country.x=C2&locale.x=zh_XC" target="_blank">https://paypal.me/spaceInfinite?country.x=C2&locale.x=zh_XC</a>
-        <a class="link-button" href="https://chrome.google.com/webstore/devconsole/673e7038-9b86-45a3-bd10-bd52bbedec70" target="_blank">https://chrome.google.com/webstore/devconsole/673e7038-9b86-45a3-bd10-bd52bbedec70</a>
-        <a class="link-button" href="https://www.buyhub.xyz/stocks/" target="_blank">https://www.buyhub.xyz/stocks/</a>
-        <a class="link-button" href="https://github.com/BuilderIO/gpt-crawler" target="_blank">https://github.com/BuilderIO/gpt-crawler</a>
-        <a class="link-button" href="https://colab.research.google.com/drive/1e6F-D8AXmp4dUtBmOSIsoaNCFvfwJtVw" target="_blank">https://colab.research.google.com/drive/1e6F-D8AXmp4dUtBmOSIsoaNCFvfwJtVw</a>
-        <a class="link-button" href="https://mp.weixin.qq.com/s/92ZGwQA0MSzkEf5k_DEd1g" target="_blank">https://mp.weixin.qq.com/s/92ZGwQA0MSzkEf5k_DEd1g</a>
-        <a class="link-button" href="https://mp.weixin.qq.com/s/RuV_4lCQentq4kBr3fv08A" target="_blank">https://mp.weixin.qq.com/s/RuV_4lCQentq4kBr3fv08A</a>
-        <a class="link-button" href="https://github.com/microsoft/LoRA" target="_blank">https://github.com/microsoft/LoRA</a>
-        <a class="link-button" href="https://github.com/shadowsocks/ShadowsocksX-NG" target="_blank">https://github.com/shadowsocks/ShadowsocksX-NG</a>
-        <a class="link-button" href="https://github.com/lewangdev/ShadowsocksX-NG-GostPlugin?tab=readme-ov-file" target="_blank">https://github.com/lewangdev/ShadowsocksX-NG-GostPlugin?tab=readme-ov-file</a>
-        <a class="link-button" href="https://mp.weixin.qq.com/s/NM9Oq3ASR9hqTqhJqpqjgA" target="_blank">https://mp.weixin.qq.com/s/NM9Oq3ASR9hqTqhJqpqjgA</a>
-        <a class="link-button" href="https://baoyu.io/translations/llm/many-options-for-running-mistral-models-in-your-terminal-using-llm" target="_blank">https://baoyu.io/translations/llm/many-options-for-running-mistral-models-in-your-terminal-using-llm</a>
-        <a class="link-button" href="https://twitter.com/xiaohuggg/status/1737683961428717693" target="_blank">https://twitter.com/xiaohuggg/status/1737683961428717693</a>
-        <a class="link-button" href="https://huggingface.co/chat" target="_blank">https://huggingface.co/chat</a>
-        <a class="link-button" href="https://huggingface.co/spaces/openskyml/mixtral-46.7b-chat" target="_blank">https://huggingface.co/spaces/openskyml/mixtral-46.7b-chat</a>
-        <a class="link-button" href="https://replicate.com/kcaverly/dolphin-2.5-mixtral-8x7b-gguf" target="_blank">https://replicate.com/kcaverly/dolphin-2.5-mixtral-8x7b-gguf</a>
-        <a class="link-button" href="https://catjourney.life/" target="_blank">https://catjourney.life/</a>
-        <a class="link-button" href="https://colab.research.google.com/github/camenduru/MagicAnimate-colab/blob/main/MagicAnimate_colab.ipynb" target="_blank">https://colab.research.google.com/github/camenduru/MagicAnimate-colab/blob/main/MagicAnimate_colab.ipynb</a>
-        <a class="link-button" href="https://nn.labml.ai/transformers/index.html" target="_blank">https://nn.labml.ai/transformers/index.html</a>
-        <a class="link-button" href="https://huggingface.co/spaces/TencentARC/PhotoMaker-Style" target="_blank">https://huggingface.co/spaces/TencentARC/PhotoMaker-Style</a>
-        <a class="link-button" href="https://github.com/pdf2htmlEX/pdf2htmlEX/releases" target="_blank">https://github.com/pdf2htmlEX/pdf2htmlEX/releases</a>
-        <a class="link-button" href="https://mp.weixin.qq.com/s/2pt29rGV5Mb1GEvapZ8ZwA" target="_blank">https://mp.weixin.qq.com/s/2pt29rGV5Mb1GEvapZ8ZwA</a>
-        <a class="link-button" href="https://mp.weixin.qq.com/s/q81UMOzgdEWv3QDqRE7x1A" target="_blank">https://mp.weixin.qq.com/s/q81UMOzgdEWv3QDqRE7x1A</a>
-        <a class="link-button" href="https://mp.weixin.qq.com/s/RbLfJpsIeJlmDf4cXyBlUA" target="_blank">https://mp.weixin.qq.com/s/RbLfJpsIeJlmDf4cXyBlUA</a>
-        <a class="link-button" href="https://mp.weixin.qq.com/s?__biz=MzkyNzU0MzQwOQ==&mid=2247483799&idx=1&sn=aacf1b61837f2129136cdbcd0005971c&chksm=c318c4ba7ffd2841d7101787a882130021410c98fe2c90f70d6a3859021cf3e50e896477e2d3&scene=132&exptype=timeline_recommend_article_extendread_samebiz&show_related_article=1&subscene=0&scene=132#wechat_redirect" target="_blank">https://mp.weixin.qq.com/s?__biz=MzkyNzU0MzQwOQ==&mid=2247483799&idx=1&sn=aacf1b61837f2129136cdbcd0005971c&chksm=c318c4ba7ffd2841d7101787a882130021410c98fe2c90f70d6a3859021cf3e50e896477e2d3&scene=132&exptype=timeline_recommend_article_extendread_samebiz&show_related_article=1&subscene=0&scene=132#wechat_redirect</a>
-        <a class="link-button" href="https://poe.com/" target="_blank">https://poe.com/</a>
-        <a class="link-button" href="https://drive.google.com/drive/quota" target="_blank">https://drive.google.com/drive/quota</a>
-        <a class="link-button" href="https://osanseviero.github.io/hackerllama/blog/posts/random_transformer/" target="_blank">https://osanseviero.github.io/hackerllama/blog/posts/random_transformer/</a>
-        <a class="link-button" href="https://github.com/openai/gpt-2" target="_blank">https://github.com/openai/gpt-2</a>
-        <a class="link-button" href="https://www.onlineocr.net/" target="_blank">https://www.onlineocr.net/</a>
-        <a class="link-button" href="https://sci-hub.se/" target="_blank">https://sci-hub.se/</a>
-        <a class="link-button" href="https://libgen.is/" target="_blank">https://libgen.is/</a>
-        <a class="link-button" href="https://thepiratebay.org/index.html" target="_blank">https://thepiratebay.org/index.html</a>
-        <a class="link-button" href="http://124.42.12.105:54327/" target="_blank">http://124.42.12.105:54327/</a>
-        <a class="link-button" href="https://platform.openai.com/docs" target="_blank">https://platform.openai.com/docs</a>
-        <a class="link-button" href="https://www.wolframalpha.com/" target="_blank">https://www.wolframalpha.com/</a>
-        <a class="link-button" href="https://modelscope.cn/studios/baichuan-inc/baichuan-7B-demo/" target="_blank">https://modelscope.cn/studios/baichuan-inc/baichuan-7B-demo/</a>
-        <a class="link-button" href="https://jeff.circleo.me/" target="_blank">https://jeff.circleo.me/</a>
-        <a class="link-button" href="https://huggingface.co/spaces/stabilityai/stable-diffusion" target="_blank">https://huggingface.co/spaces/stabilityai/stable-diffusion</a>
-        <a class="link-button" href="https://thehackernews.com/" target="_blank">https://thehackernews.com/</a>
-        <a class="link-button" href="https://drive.google.com/file/d/1VW7sxqMF_1egTDwUFEXJ8kicmsyaZyZB/view" target="_blank">https://drive.google.com/file/d/1VW7sxqMF_1egTDwUFEXJ8kicmsyaZyZB/view</a>
-        <a class="link-button" href="https://www.buyhub.xyz/pdf/MathforDeepLearningWhatYouNeedtoUnderstandNeuralNetworks.pdf" target="_blank">https://www.buyhub.xyz/pdf/MathforDeepLearningWhatYouNeedtoUnderstandNeuralNetworks.pdf</a>
-        <a class="link-button" href="https://vitomag.com/science/cgljwv" target="_blank">https://vitomag.com/science/cgljwv</a>
-        <a class="link-button" href="https://www.buyhub.xyz/pdf/DemidovichProblemsinmathematicalanalysis.pdf" target="_blank">https://www.buyhub.xyz/pdf/DemidovichProblemsinmathematicalanalysis.pdf</a>
-        <a class="link-button" href="https://github.com/ginuerzh/gost" target="_blank">https://github.com/ginuerzh/gost</a>
-        <a class="link-button" href="https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor" target="_blank">https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor</a>
-        <a class="link-button" href="https://github.com/camenduru/text-generation-webui-colab" target="_blank">https://github.com/camenduru/text-generation-webui-colab</a>
-        <a class="link-button" href="https://colab.research.google.com/github/camenduru/text-generation-webui-colab/blob/main/vicuna-13b-GPTQ-4bit-128g.ipynb" target="_blank">https://colab.research.google.com/github/camenduru/text-generation-webui-colab/blob/main/vicuna-13b-GPTQ-4bit-128g.ipynb</a>
-        <a class="link-button" href="https://arxiv.org/pdf/1706.03762.pdf" target="_blank">https://arxiv.org/pdf/1706.03762.pdf</a>
-        <a class="link-button" href="https://arxiv.org/pdf/2305.15408.pdf" target="_blank">https://arxiv.org/pdf/2305.15408.pdf</a>
-        <a class="link-button" href="https://arxiv.org/pdf/2305.14314.pdf" target="_blank">https://arxiv.org/pdf/2305.14314.pdf</a>
-        <a class="link-button" href="https://github.com/exacity/deeplearningbook-chinese" target="_blank">https://github.com/exacity/deeplearningbook-chinese</a>
-        <a class="link-button" href="https://github.com/huggingface/transformers/blob/main/README_zh-hans.md" target="_blank">https://github.com/huggingface/transformers/blob/main/README_zh-hans.md</a>
-        <a class="link-button" href="https://github.com/THUDM/ChatGLM-6B" target="_blank">https://github.com/THUDM/ChatGLM-6B</a>
-        <a class="link-button" href="https://github.com/artidoro/qlora" target="_blank">https://github.com/artidoro/qlora</a>
-        <a class="link-button" href="https://www.youtube.com/watch?v=Us5ZFp16PaU&ab_channel=SamWitteveen" target="_blank">https://www.youtube.com/watch?v=Us5ZFp16PaU&ab_channel=SamWitteveen</a>
-        <a class="link-button" href="https://github.com/ggerganov/llama.cpp" target="_blank">https://github.com/ggerganov/llama.cpp</a>
-        <a class="link-button" href="https://github.com/ymcui/Chinese-LLaMA-Alpaca-2/wiki/text-generation-webui_zh" target="_blank">https://github.com/ymcui/Chinese-LLaMA-Alpaca-2/wiki/text-generation-webui_zh</a>
-        <a class="link-button" href="https://twitter.com/Tim_Dettmers/status/1661379354507476994" target="_blank">https://twitter.com/Tim_Dettmers/status/1661379354507476994</a>
-        <a class="link-button" href="https://cloud.tencent.com/developer/article/2280193?areaSource=106005.17" target="_blank">https://cloud.tencent.com/developer/article/2280193?areaSource=106005.17</a>
-        <a class="link-button" href="https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/2/guidelines" target="_blank">https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/2/guidelines</a>
-        <a class="link-button" href="https://app.copilothub.ai/" target="_blank">https://app.copilothub.ai/</a>
-        <a class="link-button" href="https://discord.com/channels/662267976984297473/997267848118403092" target="_blank">https://discord.com/channels/662267976984297473/997267848118403092</a>
-        <a class="link-button" href="https://www.mathjax.org/#demo" target="_blank">https://www.mathjax.org/#demo</a>
-        <a class="link-button" href="https://workbench.cloud.tencent.com/rdp?region=na-siliconvalley&instanceId=lhins-3g1ad311&source=lighthouse" target="_blank">https://workbench.cloud.tencent.com/rdp?region=na-siliconvalley&instanceId=lhins-3g1ad311&source=lighthouse</a>
-        <a class="link-button" href="https://snip.mathpix.com/" target="_blank">https://snip.mathpix.com/</a>
-        <a class="link-button" href="https://github.com/rangaeeeee/books-mir-mathematics/tree/master" target="_blank">https://github.com/rangaeeeee/books-mir-mathematics/tree/master</a>
-        <a class="link-button" href="https://www.chatpdf.com/" target="_blank">https://www.chatpdf.com/</a>
-        <a class="link-button" href="http://lib.shutong121.com/" target="_blank">http://lib.shutong121.com/</a>
-        <a class="link-button" href="https://github.com/f/awesome-chatgpt-prompts/" target="_blank">https://github.com/f/awesome-chatgpt-prompts/</a>
-        <a class="link-button" href="https://rargb.to/" target="_blank">https://rargb.to/</a>
-        <a class="link-button" href="https://www.onlinedoctranslator.com/en/translationform" target="_blank">https://www.onlinedoctranslator.com/en/translationform</a>
-        <a class="link-button" href="https://matlab.mathworks.com/" target="_blank">https://matlab.mathworks.com/</a>
-        <a class="link-button" href="https://www.youtube.com/watch?v=s4jtkzHhLzY&t=256s" target="_blank">https://www.youtube.com/watch?v=s4jtkzHhLzY&t=256s</a>
-        <a class="link-button" href="https://ap.www.namecheap.com/" target="_blank">https://ap.www.namecheap.com/</a>
-        <a class="link-button" href="https://sci-hub.se/" target="_blank">https://sci-hub.se/</a>
-        <a class="link-button" href="https://zh.zlibrary-global.se/" target="_blank">https://zh.zlibrary-global.se/</a>
-        <a class="link-button" href="https://zlibrary.to/" target="_blank">https://zlibrary.to/</a>
-        <a class="link-button" href="https://leetcode.com/" target="_blank">https://leetcode.com/</a>
-        <a class="link-button" href="https://colab.research.google.com/?utm_source=scs-index" target="_blank">https://colab.research.google.com/?utm_source=scs-index</a>
-        <a class="link-button" href="https://www.mathjax.org/#demo" target="_blank">https://www.mathjax.org/#demo</a>
-        <a class="link-button" href="https://www.overleaf.com/project/6506f392bbceaea0da3862c9" target="_blank">https://www.overleaf.com/project/6506f392bbceaea0da3862c9</a>
-        <a class="link-button" href="https://matlab.mathworks.com" target="_blank">https://matlab.mathworks.com</a>
-        <a class="link-button" href="https://snip.mathpix.com" target="_blank">https://snip.mathpix.com</a>
-        <a class="link-button" href="https://linearbookscanner.org" target="_blank">https://linearbookscanner.org</a>
-        <a class="link-button" href="https://app.copilothub.ai/chat" target="_blank">https://app.copilothub.ai/chat</a>
-        <a class="link-button" href="https://app.copilothub.ai/chatbot?id=9353" target="_blank">https://app.copilothub.ai/chatbot?id=9353</a>
-        <a class="link-button" href="https://github.com/PaddlePaddle/PaddleOCR" target="_blank">https://github.com/PaddlePaddle/PaddleOCR</a>
-        <a class="link-button" href="https://www.youtube.com/watch?v=QuE9PcPoK-U&ab_channel=%E5%A4%A7%E9%B1%BC" target="_blank">https://www.youtube.com/watch?v=QuE9PcPoK-U&ab_channel=%E5%A4%A7%E9%B1%BC</a>
-        <a class="link-button" href="https://colab.research.google.com/gist/jimliu/d2f16ce0c6be9df55972e54ae6b6f5e/pdf_to_markdown_by_nougat.ipynb" target="_blank">https://colab.research.google.com/gist/jimliu/d2f16ce0c6be9df55972e54ae6b6f5e/pdf_to_markdown_by_nougat.ipynb</a>
-        <a class="link-button" href="https://defiprime.com/exchanges" target="_blank">https://defiprime.com/exchanges</a>
-        <a class="link-button" href="https://www.coingecko.com/en/developers/dashboard" target="_blank">https://www.coingecko.com/en/developers/dashboard</a>
-        <a class="link-button" href="https://coinmarketcap.com/api/" target="_blank">https://coinmarketcap.com/api/</a>
-        <a class="link-button" href="http://quote.eastmoney.com/sz000756.html" target="_blank">http://quote.eastmoney.com/sz000756.html</a>
-        <a class="link-button" href="https://translate.google.com/?sl=en&tl=zh-CN&op=docs" target="_blank">https://translate.google.com/?sl=en&tl=zh-CN&op=docs</a>
-        <a class="link-button" href="http://quote.eastmoney.com/sz002603.html" target="_blank">http://quote.eastmoney.com/sz002603.html</a>
-        <a class="link-button" href="https://leetcode.com/" target="_blank">https://leetcode.com/</a>
-        <a class="link-button" href="https://colab.research.google.com/?utm_source=scs-index" target="_blank">https://colab.research.google.com/?utm_source=scs-index</a>
-        <a class="link-button" href="https://pro.coinmarketcap.com/account" target="_blank">https://pro.coinmarketcap.com/account</a>
-        <a class="link-button" href="https://www.bilibili.com/video/BV1Ae4y1D7BU/?vd_source=4def9883c7a9cfc2c5071bbb43f7686d" target="_blank">https://www.bilibili.com/video/BV1Ae4y1D7BU/?vd_source=4def9883c7a9cfc2c5071bbb43f7686d</a>
-        <a class="link-button" href="https://www.dygod.net/html/gndy/dyzz/20070509/2035.html" target="_blank">https://www.dygod.net/html/gndy/dyzz/20070509/2035.html</a>
-        <a class="link-button" href="https://breached.to/Thread-Selling-2022-SHGA-Shanghai-Gov-National-Police-database?page=21&highlight=shanghai" target="_blank">https://breached.to/Thread-Selling-2022-SHGA-Shanghai-Gov-National-Police-database?page=21&highlight=shanghai</a>
-        <a class="link-button" href="https://coinmarketcap.com/currencies/dogecoin/" target="_blank">https://coinmarketcap.com/currencies/dogecoin/</a>
-        <a class="link-button" href="https://coinmarketcap.com/currencies/shiba-inu/" target="_blank">https://coinmarketcap.com/currencies/shiba-inu/</a>
-        <a class="link-button" href="https://www.coingecko.com/en/coins/gala" target="_blank">https://www.coingecko.com/en/coins/gala</a>
-        <a class="link-button" href="https://coinmarketcap.com/api/" target="_blank">https://coinmarketcap.com/api/</a>
-        <a class="link-button" href="https://coinmarketcap.com/api/documentation/v1/" target="_blank">https://coinmarketcap.com/api/documentation/v1/</a>
-        <a class="link-button" href="https://unmineable.com/coins/DOGE/address/D8gwrJo8awcUnLPtpgVBL9Lwj4iqJMQpPc" target="_blank">https://unmineable.com/coins/DOGE/address/D8gwrJo8awcUnLPtpgVBL9Lwj4iqJMQpPc</a>
-        <a class="link-button" href="https://unmineable.com/coins/ETh/address/0x754EE4ac33809464ea7Ed2Da9A9B032CA035364b" target="_blank">https://unmineable.com/coins/ETh/address/0x754EE4ac33809464ea7Ed2Da9A9B032CA035364b</a>
-        <a class="link-button" href="https://unmineable.com/coins/GALA/address/0x07BB7552e79A0cADCf4Bb56f6e48A50aa36Fb167" target="_blank">https://unmineable.com/coins/GALA/address/0x07BB7552e79A0cADCf4Bb56f6e48A50aa36Fb167</a>
-        <a class="link-button" href="https://finance.sina.com.cn/money/forex/hq/BTCETHUSD.shtml" target="_blank">https://finance.sina.com.cn/money/forex/hq/BTCETHUSD.shtml</a>
-        <a class="link-button" href="https://cn.investing.com/equities/mitsubishi-heavy-industries,-ltd." target="_blank">https://cn.investing.com/equities/mitsubishi-heavy-industries,-ltd.</a>
-        <a class="link-button" href="https://i.finance.sina.com.cn/zixuan,all?sudaref=finance.sina.com.cn&display=0&retcode=0" target="_blank">https://i.finance.sina.com.cn/zixuan,all?sudaref=finance.sina.com.cn&display=0&retcode=0</a>
-        <a class="link-button" href="https://mail.qq.com/" target="_blank">https://mail.qq.com/</a>
-        <a class="link-button" href="https://mail.google.com/mail/u/0/#inbox" target="_blank">https://mail.google.com/mail/u/0/#inbox</a>
-        <a class="link-button" href="https://www.youtube.com/" target="_blank">https://www.youtube.com/</a>
-        <a class="link-button" href="https://www.bilibili.com/" target="_blank">https://www.bilibili.com/</a>
-        <a class="link-button" href="https://www.linkedin.com/feed/" target="_blank">https://www.linkedin.com/feed/</a>
-        <a class="link-button" href="https://twitter.com/home" target="_blank">https://twitter.com/home</a>
-        <a class="link-button" href="https://www.binance.com/zh-CN/markets" target="_blank">https://www.binance.com/zh-CN/markets</a>
-        <a class="link-button" href="https://www.google.com/search?q=Coinbase&oq=co&aqs=chrome.0.69i59j69i57j69i60l4j69i65j69i60.692j0j15&sourceid=chrome&ie=UTF-8" target="_blank">https://www.google.com/search?q=Coinbase&oq=co&aqs=chrome.0.69i59j69i57j69i60l4j69i65j69i60.692j0j15&sourceid=chrome&ie=UTF-8</a>
-        <a class="link-button" href="https://www.coinbase.com/" target="_blank">https://www.coinbase.com/</a>
-        <a class="link-button" href="https://www.zhihu.com//" target="_blank">https://www.zhihu.com//</a>
-        <a class="link-button" href="https://www.ixigua.com/home/554626371819964?list_entrance=homepage" target="_blank">https://www.ixigua.com/home/554626371819964?list_entrance=homepage</a>
-        <a class="link-button" href="http://www.buyhub.xyz/forum" target="_blank">http://www.buyhub.xyz/forum</a>
-        <a class="link-button" href="https://buyhub.xyz/wordpress" target="_blank">https://buyhub.xyz/wordpress</a>
+        <div class="section">
+            <h2>AI Portal Web Sites</h2>
+            <ul class="link-list">
+                <li><a href="https://claude.ai/chats"" target="_blank">https://claude.ai/chats"</a></li>
+                <li><a href="https://chat.openai.com/chat"" target="_blank">https://chat.openai.com/chat"</a></li>
+                <li><a href="https://copilot.microsoft.com/"" target="_blank">https://copilot.microsoft.com/"</a></li>
+                <li><a href="https://gemini.google.com/app"" target="_blank">https://gemini.google.com/app"</a></li>
+                <li><a href="https://ai-sfc.yunyoujun.cn/"" target="_blank">https://ai-sfc.yunyoujun.cn/"</a></li>
+                <li><a href="https://www.suno.ai/"" target="_blank">https://www.suno.ai/"</a></li>
+                <li><a href="https://www.aminer.cn/"" target="_blank">https://www.aminer.cn/"</a></li>
+                <li><a href="https://www.connectedpapers.com"" target="_blank">https://www.connectedpapers.com"</a></li>
+                <li><a href="https://www.vosviewer.com/"" target="_blank">https://www.vosviewer.com/"</a></li>
+                <li><a href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx"" target="_blank">https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx"</a></li>
+                <li><a href="https://chat.openai.com/g/g-eB0gYHsdK-ramarujangpt"" target="_blank">https://chat.openai.com/g/g-eB0gYHsdK-ramarujangpt"</a></li>
+                <li><a href="https://app.fireworks.ai/models"" target="_blank">https://app.fireworks.ai/models"</a></li>
+                <li><a href="https://bing.com/create"" target="_blank">https://bing.com/create"</a></li>
+                <li><a href="http://122.51.110.176/"" target="_blank">http://122.51.110.176/"</a></li>
+                <li><a href="https://space.bilibili.com/141487901/channel/collectiondetail?sid=1657226"" target="_blank">https://space.bilibili.com/141487901/channel/collectiondetail?sid=1657226"</a></li>
+                <li><a href="https://www.notion.so/"" target="_blank">https://www.notion.so/"</a></li>
+                <li><a href="http://mechanics.autos:8080/dashboard/"" target="_blank">http://mechanics.autos:8080/dashboard/"</a></li>
+                <li><a href="http://127.0.0.1:7860/"" target="_blank">http://127.0.0.1:7860/"</a></li>
+                <li><a href="https://github.com/oobabooga/text-generation-webui"" target="_blank">https://github.com/oobabooga/text-generation-webui"</a></li>
+                <li><a href="https://www.youtube.com/watch?v=7pdEK9ckDQ8&ab_channel=AemonAlgiz"" target="_blank">https://www.youtube.com/watch?v=7pdEK9ckDQ8&ab_channel=AemonAlgiz"</a></li>
+                <li><a href="https://shop.pockyt.io/pc/goodsDetail/vc1aYhc/App%20Store%20&%20iTunes%20USA/all"" target="_blank">https://shop.pockyt.io/pc/goodsDetail/vc1aYhc/App%20Store%20&%20iTunes%20USA/all"</a></li>
+                <li><a href="https://chat.openai.com/g/g-eB0gYHsdK-ramarujangpt"" target="_blank">https://chat.openai.com/g/g-eB0gYHsdK-ramarujangpt"</a></li>
+                <li><a href="https://book.kongfz.com/396112"" target="_blank">https://book.kongfz.com/396112"</a></li>
+                <li><a href="https://paypal.me/spaceInfinite?country.x=C2&locale.x=zh_XC"" target="_blank">https://paypal.me/spaceInfinite?country.x=C2&locale.x=zh_XC"</a></li>
+                <li><a href="https://chrome.google.com/webstore/devconsole/673e7038-9b86-45a3-bd10-bd52bbedec70"" target="_blank">https://chrome.google.com/webstore/devconsole/673e7038-9b86-45a3-bd10-bd52bbedec70"</a></li>
+                <li><a href="https://www.buyhub.xyz/stocks/"" target="_blank">https://www.buyhub.xyz/stocks/"</a></li>
+                <li><a href="https://github.com/BuilderIO/gpt-crawler"" target="_blank">https://github.com/BuilderIO/gpt-crawler"</a></li>
+                <li><a href="https://colab.research.google.com/drive/1e6F-D8AXmp4dUtBmOSIsoaNCFvfwJtVw"" target="_blank">https://colab.research.google.com/drive/1e6F-D8AXmp4dUtBmOSIsoaNCFvfwJtVw"</a></li>
+                <li><a href="https://mp.weixin.qq.com/s/92ZGwQA0MSzkEf5k_DEd1g"" target="_blank">https://mp.weixin.qq.com/s/92ZGwQA0MSzkEf5k_DEd1g"</a></li>
+                <li><a href="https://mp.weixin.qq.com/s/RuV_4lCQentq4kBr3fv08A"" target="_blank">https://mp.weixin.qq.com/s/RuV_4lCQentq4kBr3fv08A"</a></li>
+                <li><a href="https://github.com/microsoft/LoRA"" target="_blank">https://github.com/microsoft/LoRA"</a></li>
+                <li><a href="https://github.com/shadowsocks/ShadowsocksX-NG"" target="_blank">https://github.com/shadowsocks/ShadowsocksX-NG"</a></li>
+                <li><a href="https://github.com/lewangdev/ShadowsocksX-NG-GostPlugin?tab=readme-ov-file"" target="_blank">https://github.com/lewangdev/ShadowsocksX-NG-GostPlugin?tab=readme-ov-file"</a></li>
+                <li><a href="https://mp.weixin.qq.com/s/NM9Oq3ASR9hqTqhJqpqjgA"" target="_blank">https://mp.weixin.qq.com/s/NM9Oq3ASR9hqTqhJqpqjgA"</a></li>
+                <li><a href="https://baoyu.io/translations/llm/many-options-for-running-mistral-models-in-your-terminal-using-llm"" target="_blank">https://baoyu.io/translations/llm/many-options-for-running-mistral-models-in-your-terminal-using-llm"</a></li>
+                <li><a href="https://twitter.com/xiaohuggg/status/1737683961428717693"" target="_blank">https://twitter.com/xiaohuggg/status/1737683961428717693"</a></li>
+                <li><a href="https://huggingface.co/chat"" target="_blank">https://huggingface.co/chat"</a></li>
+                <li><a href="https://huggingface.co/spaces/openskyml/mixtral-46.7b-chat"" target="_blank">https://huggingface.co/spaces/openskyml/mixtral-46.7b-chat"</a></li>
+                <li><a href="https://replicate.com/kcaverly/dolphin-2.5-mixtral-8x7b-gguf"" target="_blank">https://replicate.com/kcaverly/dolphin-2.5-mixtral-8x7b-gguf"</a></li>
+                <li><a href="https://catjourney.life/"" target="_blank">https://catjourney.life/"</a></li>
+                <li><a href="https://colab.research.google.com/github/camenduru/MagicAnimate-colab/blob/main/MagicAnimate_colab.ipynb"" target="_blank">https://colab.research.google.com/github/camenduru/MagicAnimate-colab/blob/main/MagicAnimate_colab.ipynb"</a></li>
+                <li><a href="https://nn.labml.ai/transformers/index.html"" target="_blank">https://nn.labml.ai/transformers/index.html"</a></li>
+                <li><a href="https://huggingface.co/spaces/TencentARC/PhotoMaker-Style"" target="_blank">https://huggingface.co/spaces/TencentARC/PhotoMaker-Style"</a></li>
+                <li><a href="https://github.com/pdf2htmlEX/pdf2htmlEX/releases"" target="_blank">https://github.com/pdf2htmlEX/pdf2htmlEX/releases"</a></li>
+                <li><a href="https://mp.weixin.qq.com/s/2pt29rGV5Mb1GEvapZ8ZwA"" target="_blank">https://mp.weixin.qq.com/s/2pt29rGV5Mb1GEvapZ8ZwA"</a></li>
+                <li><a href="https://mp.weixin.qq.com/s/q81UMOzgdEWv3QDqRE7x1A"" target="_blank">https://mp.weixin.qq.com/s/q81UMOzgdEWv3QDqRE7x1A"</a></li>
+                <li><a href="https://mp.weixin.qq.com/s/RbLfJpsIeJlmDf4cXyBlUA"" target="_blank">https://mp.weixin.qq.com/s/RbLfJpsIeJlmDf4cXyBlUA"</a></li>
+                <li><a href="https://mp.weixin.qq.com/s?__biz=MzkyNzU0MzQwOQ==&mid=2247483799&idx=1&sn=aacf1b61837f2129136cdbcd0005971c&chksm=c318c4ba7ffd2841d7101787a882130021410c98fe2c90f70d6a3859021cf3e50e896477e2d3&scene=132&exptype=timeline_recommend_article_extendread_samebiz&show_related_article=1&subscene=0&scene=132#wechat_redirect"" target="_blank">https://mp.weixin.qq.com/s?__biz=MzkyNzU0MzQwOQ==&mid=2247483799&idx=1&sn=aacf1b61837f2129136cdbcd0005971c&chksm=c318c4ba7ffd2841d7101787a882130021410c98fe2c90f70d6a3859021cf3e50e896477e2d3&scene=132&exptype=timeline_recommend_article_extendread_samebiz&show_related_article=1&subscene=0&scene=132#wechat_redirect"</a></li>
+                <li><a href="https://poe.com/"" target="_blank">https://poe.com/"</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>AI Math, OCR</h2>
+            <ul class="link-list">
+                <li><a href="https://www.mathjax.org/#demo"" target="_blank">https://www.mathjax.org/#demo"</a></li>
+                <li><a href="https://www.overleaf.com/project/6506f392bbceaea0da3862c9"" target="_blank">https://www.overleaf.com/project/6506f392bbceaea0da3862c9"</a></li>
+                <li><a href="https://matlab.mathworks.com"" target="_blank">https://matlab.mathworks.com"</a></li>
+                <li><a href="https://snip.mathpix.com"" target="_blank">https://snip.mathpix.com"</a></li>
+                <li><a href="https://linearbookscanner.org"" target="_blank">https://linearbookscanner.org"</a></li>
+                <li><a href="https://app.copilothub.ai/chat"" target="_blank">https://app.copilothub.ai/chat"</a></li>
+                <li><a href="https://app.copilothub.ai/chatbot?id=9353"" target="_blank">https://app.copilothub.ai/chatbot?id=9353"</a></li>
+                <li><a href="https://github.com/PaddlePaddle/PaddleOCR"" target="_blank">https://github.com/PaddlePaddle/PaddleOCR"</a></li>
+                <li><a href="https://www.youtube.com/watch?v=QuE9PcPoK-U&ab_channel=%E5%A4%A7%E9%B1%BC"" target="_blank">https://www.youtube.com/watch?v=QuE9PcPoK-U&ab_channel=%E5%A4%A7%E9%B1%BC"</a></li>
+                <li><a href="https://colab.research.google.com/gist/jimliu/d2f16ce0c6be9df55972e54ae6b6f5e/pdf_to_markdown_by_nougat.ipynb"" target="_blank">https://colab.research.google.com/gist/jimliu/d2f16ce0c6be9df55972e54ae6b6f5e/pdf_to_markdown_by_nougat.ipynb"</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>AI ENV, Book, Paper, GitHub, SW, Vids</h2>
+            <ul class="link-list">
+                <li><a href="https://drive.google.com/drive/quota"" target="_blank">https://drive.google.com/drive/quota"</a></li>
+                <li><a href="https://osanseviero.github.io/hackerllama/blog/posts/random_transformer/"" target="_blank">https://osanseviero.github.io/hackerllama/blog/posts/random_transformer/"</a></li>
+                <li><a href="https://github.com/openai/gpt-2"" target="_blank">https://github.com/openai/gpt-2"</a></li>
+                <li><a href="https://www.onlineocr.net/"" target="_blank">https://www.onlineocr.net/"</a></li>
+                <li><a href="https://sci-hub.se/"" target="_blank">https://sci-hub.se/"</a></li>
+                <li><a href="https://libgen.is/"" target="_blank">https://libgen.is/"</a></li>
+                <li><a href="https://thepiratebay.org/index.html"" target="_blank">https://thepiratebay.org/index.html"</a></li>
+                <li><a href="http://124.42.12.105:54327/"" target="_blank">http://124.42.12.105:54327/"</a></li>
+                <li><a href="https://platform.openai.com/docs"" target="_blank">https://platform.openai.com/docs"</a></li>
+                <li><a href="https://www.wolframalpha.com/"" target="_blank">https://www.wolframalpha.com/"</a></li>
+                <li><a href="https://modelscope.cn/studios/baichuan-inc/baichuan-7B-demo/"" target="_blank">https://modelscope.cn/studios/baichuan-inc/baichuan-7B-demo/"</a></li>
+                <li><a href="https://jeff.circleo.me/"" target="_blank">https://jeff.circleo.me/"</a></li>
+                <li><a href="https://huggingface.co/spaces/stabilityai/stable-diffusion"" target="_blank">https://huggingface.co/spaces/stabilityai/stable-diffusion"</a></li>
+                <li><a href="https://thehackernews.com/"" target="_blank">https://thehackernews.com/"</a></li>
+                <li><a href="https://drive.google.com/file/d/1VW7sxqMF_1egTDwUFEXJ8kicmsyaZyZB/view"" target="_blank">https://drive.google.com/file/d/1VW7sxqMF_1egTDwUFEXJ8kicmsyaZyZB/view"</a></li>
+                <li><a href="https://www.buyhub.xyz/pdf/MathforDeepLearningWhatYouNeedtoUnderstandNeuralNetworks.pdf"" target="_blank">https://www.buyhub.xyz/pdf/MathforDeepLearningWhatYouNeedtoUnderstandNeuralNetworks.pdf"</a></li>
+                <li><a href="https://vitomag.com/science/cgljwv"" target="_blank">https://vitomag.com/science/cgljwv"</a></li>
+                <li><a href="https://www.buyhub.xyz/pdf/DemidovichProblemsinmathematicalanalysis.pdf"" target="_blank">https://www.buyhub.xyz/pdf/DemidovichProblemsinmathematicalanalysis.pdf"</a></li>
+                <li><a href="https://github.com/ginuerzh/gost"" target="_blank">https://github.com/ginuerzh/gost"</a></li>
+                <li><a href="https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor"" target="_blank">https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor"</a></li>
+                <li><a href="https://github.com/camenduru/text-generation-webui-colab"" target="_blank">https://github.com/camenduru/text-generation-webui-colab"</a></li>
+                <li><a href="https://colab.research.google.com/github/camenduru/text-generation-webui-colab/blob/main/vicuna-13b-GPTQ-4bit-128g.ipynb"" target="_blank">https://colab.research.google.com/github/camenduru/text-generation-webui-colab/blob/main/vicuna-13b-GPTQ-4bit-128g.ipynb"</a></li>
+                <li><a href="https://arxiv.org/pdf/1706.03762.pdf" target="_blank">https://arxiv.org/pdf/1706.03762.pdf</a></li>
+                <li><a href="https://arxiv.org/pdf/2305.15408.pdf"" target="_blank">https://arxiv.org/pdf/2305.15408.pdf"</a></li>
+                <li><a href="https://arxiv.org/pdf/2305.14314.pdf"" target="_blank">https://arxiv.org/pdf/2305.14314.pdf"</a></li>
+                <li><a href="https://github.com/exacity/deeplearningbook-chinese"" target="_blank">https://github.com/exacity/deeplearningbook-chinese"</a></li>
+                <li><a href="https://github.com/huggingface/transformers/blob/main/README_zh-hans.md"" target="_blank">https://github.com/huggingface/transformers/blob/main/README_zh-hans.md"</a></li>
+                <li><a href="https://github.com/THUDM/ChatGLM-6B"" target="_blank">https://github.com/THUDM/ChatGLM-6B"</a></li>
+                <li><a href="https://github.com/artidoro/qlora"" target="_blank">https://github.com/artidoro/qlora"</a></li>
+                <li><a href="https://www.youtube.com/watch?v=Us5ZFp16PaU&ab_channel=SamWitteveen"" target="_blank">https://www.youtube.com/watch?v=Us5ZFp16PaU&ab_channel=SamWitteveen"</a></li>
+                <li><a href="https://github.com/ggerganov/llama.cpp"" target="_blank">https://github.com/ggerganov/llama.cpp"</a></li>
+                <li><a href="https://github.com/ymcui/Chinese-LLaMA-Alpaca-2/wiki/text-generation-webui_zh"" target="_blank">https://github.com/ymcui/Chinese-LLaMA-Alpaca-2/wiki/text-generation-webui_zh"</a></li>
+                <li><a href="https://twitter.com/Tim_Dettmers/status/1661379354507476994"" target="_blank">https://twitter.com/Tim_Dettmers/status/1661379354507476994"</a></li>
+                <li><a href="https://cloud.tencent.com/developer/article/2280193?areaSource=106005.17"" target="_blank">https://cloud.tencent.com/developer/article/2280193?areaSource=106005.17"</a></li>
+                <li><a href="https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/2/guidelines"" target="_blank">https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/2/guidelines"</a></li>
+                <li><a href="https://app.copilothub.ai/"" target="_blank">https://app.copilothub.ai/"</a></li>
+                <li><a href="https://discord.com/channels/662267976984297473/997267848118403092"" target="_blank">https://discord.com/channels/662267976984297473/997267848118403092"</a></li>
+                <li><a href="https://www.mathjax.org/#demo"" target="_blank">https://www.mathjax.org/#demo"</a></li>
+                <li><a href="https://workbench.cloud.tencent.com/rdp?region=na-siliconvalley&instanceId=lhins-3g1ad311&source=lighthouse"" target="_blank">https://workbench.cloud.tencent.com/rdp?region=na-siliconvalley&instanceId=lhins-3g1ad311&source=lighthouse"</a></li>
+                <li><a href="https://snip.mathpix.com/"" target="_blank">https://snip.mathpix.com/"</a></li>
+                <li><a href="https://github.com/rangaeeeee/books-mir-mathematics/tree/master"" target="_blank">https://github.com/rangaeeeee/books-mir-mathematics/tree/master"</a></li>
+                <li><a href="https://www.chatpdf.com/"" target="_blank">https://www.chatpdf.com/"</a></li>
+                <li><a href="http://lib.shutong121.com/"" target="_blank">http://lib.shutong121.com/"</a></li>
+                <li><a href="https://github.com/f/awesome-chatgpt-prompts/"" target="_blank">https://github.com/f/awesome-chatgpt-prompts/"</a></li>
+                <li><a href="https://rargb.to/"" target="_blank">https://rargb.to/"</a></li>
+                <li><a href="https://www.onlinedoctranslator.com/en/translationform"" target="_blank">https://www.onlinedoctranslator.com/en/translationform"</a></li>
+                <li><a href="https://matlab.mathworks.com/"" target="_blank">https://matlab.mathworks.com/"</a></li>
+                <li><a href="https://www.youtube.com/watch?v=s4jtkzHhLzY&t=256s"" target="_blank">https://www.youtube.com/watch?v=s4jtkzHhLzY&t=256s"</a></li>
+                <li><a href="https://ap.www.namecheap.com/"" target="_blank">https://ap.www.namecheap.com/"</a></li>
+                <li><a href="https://sci-hub.se/"" target="_blank">https://sci-hub.se/"</a></li>
+                <li><a href="https://zh.zlibrary-global.se/"" target="_blank">https://zh.zlibrary-global.se/"</a></li>
+                <li><a href="https://zlibrary.to/"" target="_blank">https://zlibrary.to/"</a></li>
+                <li><a href="https://leetcode.com/"" target="_blank">https://leetcode.com/"</a></li>
+                <li><a href="https://colab.research.google.com/?utm_source=scs-index"" target="_blank">https://colab.research.google.com/?utm_source=scs-index"</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Web3 Crypto Coin etc Web Sites</h2>
+            <ul class="link-list">
+                <li><a href="https://defiprime.com/exchanges"" target="_blank">https://defiprime.com/exchanges"</a></li>
+                <li><a href="https://www.coingecko.com/en/developers/dashboard"" target="_blank">https://www.coingecko.com/en/developers/dashboard"</a></li>
+                <li><a href="https://coinmarketcap.com/api/"" target="_blank">https://coinmarketcap.com/api/"</a></li>
+                <li><a href="http://quote.eastmoney.com/sz000756.html"" target="_blank">http://quote.eastmoney.com/sz000756.html"</a></li>
+                <li><a href="https://translate.google.com/?sl=en&tl=zh-CN&op=docs"" target="_blank">https://translate.google.com/?sl=en&tl=zh-CN&op=docs"</a></li>
+                <li><a href="http://quote.eastmoney.com/sz002603.html"" target="_blank">http://quote.eastmoney.com/sz002603.html"</a></li>
+                <li><a href="https://leetcode.com/"" target="_blank">https://leetcode.com/"</a></li>
+                <li><a href="https://colab.research.google.com/?utm_source=scs-index"" target="_blank">https://colab.research.google.com/?utm_source=scs-index"</a></li>
+                <li><a href="https://pro.coinmarketcap.com/account"" target="_blank">https://pro.coinmarketcap.com/account"</a></li>
+                <li><a href="https://www.bilibili.com/video/BV1Ae4y1D7BU/?vd_source=4def9883c7a9cfc2c5071bbb43f7686d"" target="_blank">https://www.bilibili.com/video/BV1Ae4y1D7BU/?vd_source=4def9883c7a9cfc2c5071bbb43f7686d"</a></li>
+                <li><a href="https://www.dygod.net/html/gndy/dyzz/20070509/2035.html"" target="_blank">https://www.dygod.net/html/gndy/dyzz/20070509/2035.html"</a></li>
+                <li><a href="https://breached.to/Thread-Selling-2022-SHGA-Shanghai-Gov-National-Police-database?page=21&highlight=shanghai"" target="_blank">https://breached.to/Thread-Selling-2022-SHGA-Shanghai-Gov-National-Police-database?page=21&highlight=shanghai"</a></li>
+                <li><a href="https://coinmarketcap.com/currencies/dogecoin/"" target="_blank">https://coinmarketcap.com/currencies/dogecoin/"</a></li>
+                <li><a href="https://coinmarketcap.com/currencies/shiba-inu/"" target="_blank">https://coinmarketcap.com/currencies/shiba-inu/"</a></li>
+                <li><a href="https://www.coingecko.com/en/coins/gala"" target="_blank">https://www.coingecko.com/en/coins/gala"</a></li>
+                <li><a href="https://coinmarketcap.com/api/"" target="_blank">https://coinmarketcap.com/api/"</a></li>
+                <li><a href="https://coinmarketcap.com/api/documentation/v1/"" target="_blank">https://coinmarketcap.com/api/documentation/v1/"</a></li>
+                <li><a href="https://unmineable.com/coins/DOGE/address/D8gwrJo8awcUnLPtpgVBL9Lwj4iqJMQpPc"" target="_blank">https://unmineable.com/coins/DOGE/address/D8gwrJo8awcUnLPtpgVBL9Lwj4iqJMQpPc"</a></li>
+                <li><a href="https://unmineable.com/coins/ETh/address/0x754EE4ac33809464ea7Ed2Da9A9B032CA035364b"" target="_blank">https://unmineable.com/coins/ETh/address/0x754EE4ac33809464ea7Ed2Da9A9B032CA035364b"</a></li>
+                <li><a href="https://unmineable.com/coins/GALA/address/0x07BB7552e79A0cADCf4Bb56f6e48A50aa36Fb167"" target="_blank">https://unmineable.com/coins/GALA/address/0x07BB7552e79A0cADCf4Bb56f6e48A50aa36Fb167"</a></li>
+                <li><a href="https://finance.sina.com.cn/money/forex/hq/BTCETHUSD.shtml"" target="_blank">https://finance.sina.com.cn/money/forex/hq/BTCETHUSD.shtml"</a></li>
+                <li><a href="https://cn.investing.com/equities/mitsubishi-heavy-industries" target="_blank">https://cn.investing.com/equities/mitsubishi-heavy-industries</a></li>
+                <li><a href="https://i.finance.sina.com.cn/zixuan" target="_blank">https://i.finance.sina.com.cn/zixuan</a></li>
+                <li><a href="https://mail.qq.com/"" target="_blank">https://mail.qq.com/"</a></li>
+                <li><a href="https://mail.google.com/mail/u/0/#inbox"" target="_blank">https://mail.google.com/mail/u/0/#inbox"</a></li>
+                <li><a href="https://www.youtube.com/"" target="_blank">https://www.youtube.com/"</a></li>
+                <li><a href="https://www.bilibili.com/"" target="_blank">https://www.bilibili.com/"</a></li>
+                <li><a href="https://www.linkedin.com/feed/"" target="_blank">https://www.linkedin.com/feed/"</a></li>
+                <li><a href="https://twitter.com/home"" target="_blank">https://twitter.com/home"</a></li>
+                <li><a href="https://www.binance.com/zh-CN/markets"" target="_blank">https://www.binance.com/zh-CN/markets"</a></li>
+                <li><a href="https://www.google.com/search?q=Coinbase&oq=co&aqs=chrome.0.69i59j69i57j69i60l4j69i65j69i60.692j0j15&sourceid=chrome&ie=UTF-8"" target="_blank">https://www.google.com/search?q=Coinbase&oq=co&aqs=chrome.0.69i59j69i57j69i60l4j69i65j69i60.692j0j15&sourceid=chrome&ie=UTF-8"</a></li>
+                <li><a href="https://www.coinbase.com/"" target="_blank">https://www.coinbase.com/"</a></li>
+                <li><a href="https://www.zhihu.com//"" target="_blank">https://www.zhihu.com//"</a></li>
+                <li><a href="https://www.ixigua.com/home/554626371819964?list_entrance=homepage"" target="_blank">https://www.ixigua.com/home/554626371819964?list_entrance=homepage"</a></li>
+                <li><a href="http://www.buyhub.xyz/forum"" target="_blank">http://www.buyhub.xyz/forum"</a></li>
+                <li><a href="https://buyhub.xyz/wordpress"" target="_blank">https://buyhub.xyz/wordpress"</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
