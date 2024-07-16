@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chat Room</title>
+    <style>
+        /* ... (保持原有的样式不变) ... */
+    </style>
+</head>
+<body>
+    <div id="error-box"></div>
+    <div id="chat-box"></div>
+    <textarea id="message-input" placeholder="Type your message..." maxlength="20000"></textarea>
+    <button id="send-button" onclick="sendMessage()">Send</button>
+
+    <script>
+        function getColorForIP(ip) {
+            if (!ip) return '#f0f0f0'; // 默认颜色
+            let hash = 0;
+            for (let i = 0; i < ip.length; i++) {
+                hash = ip.charCodeAt(i) + ((hash << 5) - hash);
+            }
+            const hue = hash % 360;
+            return `hsl(${hue}, 70%, 80%)`;
+        }
+
+        function updateChat() {
+            fetch('chat_backend.php')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log("Received data:", JSON.stringify(data));  // 详细记录接收到的数据
+                    const chatBox = document.getElementById('chat-box');
+                    chatBox.innerHTML = '';
+                    if (data.messages && Array.isArray(data.messages) && data.messages.length > 0) {
+                        data.messages.forEach(message => {
+                            if (message && typeof message === 'object') {
+                                console.log("Processing message:", JSON.stringify(message)); // 记录每条消息的详情
+                                const messageDiv = document.createElement('div');
+                                messageDiv.className = 'message';
+                                messageDiv.style.backgroundColor = getColorForIP(message.ip);
+                                
+                                const header = document.createElement('div');
+                                header.className = 'message-header';
+                                header.textContent = `${message.timestamp || 'Unknown time'} - ${message.ip || 'Unknown IP'}`;
+                                
+                                const content = document.createElement('div');
+                                content.textContent = message.message || 'No message content';
+                                
+                                messageDiv.appendChild(header);
+                                messageDiv.appendChild(content);
+                                chatBox.appendChild(messageDiv);
+                            } else {
+                                console.error("Invalid message format:", message);
+                            }
+                        });
+                    } else {
+                        console.log("No messages or invalid messages array");
+                        chatBox.textContent = "No messages yet.";
+                    }
+                    chatBox.scrollTop = chatBox.scrollHeight;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('error-box').textContent = `Error: ${error.message}`;
+                });
+        }
+
+        function sendMessage() {
+            const messageInput = document.getElementById('message-input');
+            const message = messageInput.value.trim();
+            
+            if (message) {
+                fetch('chat_backend.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ message: message }),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        messageInput.value = '';
+                        updateChat();
+                    } else {
+                        console.error('Error sending message:', data.message);
+                        document.getElementById('error-box').textContent = `Error: ${data.message}`;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('error-box').textContent = `Error: ${error.message}`;
+                });
+            }
+        }
+
+        // 初始化时立即更新聊天
+        updateChat();
+
+        // 每5秒更新一次聊天
+        setInterval(updateChat, 5000);
+
+        // Add event listener for Enter key
+        document.getElementById('message-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>

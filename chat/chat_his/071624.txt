@@ -1,0 +1,29 @@
+2024-07-16 10:45:09 - 手动阀手动阀
+2024-07-16 11:08:39 - pp/htdocs/gh$ nano test.c
+ceo@green-choice-2:/opt/lampp/htdocs/gh$ ls
+ChatGPT-生成Excel数据.html  ghTrend_2024-07-09.html  ghTrend_2024-07-14.html  history
+ghTrend.php                 ghTrend_2024-07-10.html  ghTrend_2024-07-15.html  star_history.json
+ghTrend_2024-07-05.html     ghTrend_2024-07-11.html  ghTrend_2024-07-16.html  test.c
+ghTrend_2024-07-07.html     ghTrend_2024-07-12.html  ghTrends.py
+ghTrend_2024-07-08.html     ghTrend_2024-07-13.html  github_trend.log
+ceo@green-choice-2:/opt/lampp/htdocs/gh$ nano ghTrends.py
+ceo@green-choice-2:/opt/lampp/htdocs/gh$ which vim
+/usr/bin/vim
+ceo@green-choice-2:/opt/lampp/htdocs/gh$ ll /usr/bin/vim
+lrwxrwxrwx 1 root root 21 Oct 28  2023 /usr/bin/vim -&gt; /etc/alternatives/vim*
+ceo@green-choice-2:/opt/lampp/htdocs/gh$ ll  /etc/altern
+{"timestamp":"2024-07-16 11:17:35","ip":"104.225.146.232","message":"\u58eb\u5927\u592b"}
+{"timestamp":"2024-07-16 11:17:40","ip":"104.225.146.232","message":"\u963f\u65af\u8482\u82ac\u963f\u677e\u5927"}
+{"timestamp":"2024-07-16 11:17:43","ip":"104.225.146.232","message":"test"}
+{"timestamp":"2024-07-16 11:17:55","ip":"104.225.146.232","message":"test"}
+{"timestamp":"2024-07-16 11:18:05","ip":"124.220.103.43","message":"sdf"}
+{"timestamp":"2024-07-16 11:18:10","ip":"124.220.103.43","message":"sdfsa"}
+{"timestamp":"2024-07-16 11:21:52","ip":"104.225.146.232","message":"\u58eb\u5927\u592b"}
+{"timestamp":"2024-07-16 11:23:49","ip":"104.225.146.232","message":"\u58eb\u5927\u592b"}
+{"timestamp":"2024-07-16 11:23:54","ip":"104.225.146.232","message":"1111"}
+{"timestamp":"2024-07-16 11:24:01","ip":"104.225.146.232","message":"2222"}
+{"timestamp":"2024-07-16 11:24:03","ip":"104.225.146.232","message":"222"}
+{"timestamp":"2024-07-16 11:25:32","ip":"104.225.146.232","message":"2345345"}
+{"timestamp":"2024-07-16 11:25:36","ip":"104.225.146.232","message":"2\u8ba934"}
+{"timestamp":"2024-07-16 11:32:25","ip":"124.220.103.43","message":"sdfsdf"}
+{"timestamp":"2024-07-16 11:32:30","ip":"124.220.103.43","message":"sdfsdf"}
