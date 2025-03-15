@@ -11,7 +11,11 @@ function getCryptoPrice($symbol) {
     return $data[$symbol]['usd'];
 }
 
-$symbols = array('bitcoin', 'binancecoin', 'ethereum', 'dogecoin');
+$symbols = array('bitcoin', 'ethereum', 'tether', 'bnb', 'xrp', 'cardano', 'solana', 'dogecoin', 'polkadot', 'avalanche',
+    'shiba-inu', 'polygon', 'dai', 'tron', 'litecoin', 'cronos', 'uniswap', 'wrapped-bitcoin', 'chainlink', 'near',
+    'ftx-token', 'monero', 'stellar', 'ethereum-classic', 'algorand', 'cosmos', 'vechain', 'flow', 'internet-computer',
+    'decentraland', 'apecoin', 'the-sandbox', 'matic-network', 'axie-infinity', 'theta-network', 'elrond-erd-2', 'hedera-hashgraph',
+    'helium', 'chiliz', 'filecoin', 'bitcoin-cash', 'theta-fuel', 'klay-token', 'the-graph', 'ecash', 'bittorrent-old');
 $prices = array();
 
 foreach ($symbols as $symbol) {

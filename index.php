@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+        /* 让 iframe 自适应页面 */
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
     <script>
         $(document).ready(function() {
             updatePrices();
@@ -12,7 +20,7 @@
             $("#priceFrame").contents().find("#prices").load("get_prices.php");
         }
     </script>
-    <title>AI网站一网打尽！</title>
+    <title>buyhub.xyzAI网站一网打尽！</title>
     <style>
 .text-left {
   text-align: left; 
@@ -60,10 +68,11 @@
     </style>
 </head>
 <body>
-<h1>加密货币价格每小时自动刷新</h1>
-    <iframe id="priceFrame" src="prices.html" width="100%" height="70"></iframe>
+<h1 style="text-align: center; color: #ADD8E6;">buyhub.xyz加密货币价格每小时自动刷新</h1>
+<h1 style="text-align: center; color: #ADD8E6;">http://buyhub.xyz</h1>
+    <iframe src="sortCryp/main.php"></iframe>
 
-<iframe src="https://shop.kongfz.com/396112/" width="100%" height="188px"></iframe> 
+<iframe src="https://shop.kongfz.com/396112" width="100%" height="188px"></iframe> 
     <!-- 广告容器 -->
 
     <script>
@@ -152,7 +161,7 @@ while(!feof($handle)){
 fclose($handle);
 #echo $linecount;
 // 显示欢迎信息
-echo "<font size='4' face='楷体'>尊贵的人工智能科学家,程序员,prompt scientist,火箭总设计师,总架构师,总算法师,总工程师,CTO,研究员,学士,博士,院士们,你们好!</font> ";
+echo "<font size='4' face='楷体'>www.buyhub.xyz人工智能聚合网站欢迎您!!!尊贵的人工智能科学家,程序员,prompt scientist,火箭总设计师,总架构师,总算法师,总工程师,CTO,研究员,学士,博士,院士们,你们好!www.buyhub.xyz</font> ";
 echo "<br><font size='4' face='Times New Roman'>"; 
 echo "Welcome onboard!!Respected AI scientists, programmers, prompt scientists, rocket chief designer, chief architect, chief wizard, chief engineer, CTO, researcher, PHD,mathematicians, </font>";
 echo "Your IP :"     . $ip_address;  
@@ -161,15 +170,48 @@ echo "<font size='6' face='楷体' color = 'Red'> ,you are the " . $linecount . 
 // 3分钟闪烁一次
 
 ?>
+<style>.pp-YU3DBAUHTC7WQ{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>
+<form action="https://www.paypal.com/ncp/payment/YU3DBAUHTC7WQ" method="post" target="_top" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
+  <input class="pp-YU3DBAUHTC7WQ" type="submit" value="您的慷慨捐助可以维护我们网站长期的运行！" />
+  <img src=https://www.paypalobjects.com/images/Debit_Credit_APM.svg alt="cards" />
+  <section> 技术支持提供方： <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
+</form>
 
 <?php
 $portalurls = array(
-"https://claude.ai/chats",
-"https://chat.openai.com/chat",
+"https://aistudio.google.com",
+"https://chat.inceptionlabs.ai/",
+"https://chat.deepseek.com/",
 "https://copilot.microsoft.com/",
 "https://gemini.google.com/app",
-"https://ai-sfc.yunyoujun.cn/",
+"https://claude.ai/chats",
+"https://chatgpt.com",
+"https://sora.com/",
+"https://learning.google.com/experiments/learn-about",
+"https://ai.google.dev/gemini-api/docs",
+"https://notebooklm.google.com",
+"https://colab.research.google.com/drive/1QDp8hPOZCEWGKqG48UrWyPG211z5Xfj6#scrollTo=lC6sS6DnmGmi",
+"https://glif.app/@Judi_W/glifs/clxwp56c300022ttqygt0v4o5",
+"https://glif.app/@Sheldon-master",
+"https://illuminate.withgoogle.com",
+"https://www.3dwhere.com/search?k=f117",
+"http://122.51.110.176:20586/670bbab2b9",
+"https://write.qq.com/portal/dashboard/books",
+"https://huitong-tech.feishu.cn/wiki/LS5iwf0A6ixYnykTb9bcfv1xnOh?fromScene=spaceOverview",
+"https://www.coze.com/home",
+"https://lumalabs.ai/dream-machine",
+"https://groq.com/",
 "https://www.suno.ai/",
+"https://www.buyhub.xyz/ai/",
+"https://www.buyhub.xyz/chat/",
+"https://www.buyhub.xyz/LYIT",
+"https://www.buyhub.xyz/juhe",
+"https://www.buyhub.xyz/gh",
+"https://www.buyhub.xyz/fake-screenshot/",
+"https://www.buyhub.xyz/gh/ghTrend.php",
+"http://mechanics.autos:8080",
+"http://mechanics.autos:8080/screenshot-2024072705.png",
+"https://twitter.com/search-advanced",
 "https://www.aminer.cn/",
 "https://www.connectedpapers.com",
 "https://www.vosviewer.com/",
@@ -180,13 +222,12 @@ $portalurls = array(
 "http://122.51.110.176/",
 "https://space.bilibili.com/141487901/channel/collectiondetail?sid=1657226",
 "https://www.notion.so/",
-"http://mechanics.autos:8080",
 "http://127.0.0.1:7860/",
 "https://github.com/oobabooga/text-generation-webui",
 "https://www.youtube.com/watch?v=7pdEK9ckDQ8&ab_channel=AemonAlgiz",
 "https://shop.pockyt.io/pc/goodsDetail/vc1aYhc/App%20Store%20&%20iTunes%20USA/all",
+"https://spacey.shop.kongfz.com/",
 "https://chat.openai.com/g/g-eB0gYHsdK-ramarujangpt",
-"https://book.kongfz.com/396112",
 "https://paypal.me/spaceInfinite?country.x=C2&locale.x=zh_XC",
 "https://chrome.google.com/webstore/devconsole/673e7038-9b86-45a3-bd10-bd52bbedec70",
 "https://www.buyhub.xyz/stocks/",
@@ -211,70 +252,42 @@ $portalurls = array(
 "https://mp.weixin.qq.com/s/2pt29rGV5Mb1GEvapZ8ZwA",
 "https://mp.weixin.qq.com/s/q81UMOzgdEWv3QDqRE7x1A",
 "https://mp.weixin.qq.com/s/RbLfJpsIeJlmDf4cXyBlUA",
-"https://mp.weixin.qq.com/s?__biz=MzkyNzU0MzQwOQ==&mid=2247483799&idx=1&sn=aacf1b61837f2129136cdbcd0005971c&chksm=c318c4ba7ffd2841d7101787a882130021410c98fe2c90f70d6a3859021cf3e50e896477e2d3&scene=132&exptype=timeline_recommend_article_extendread_samebiz&show_related_article=1&subscene=0&scene=132#wechat_redirect",
 "https://poe.com/"
 
 );
 
 $envurls = array(
-"https://drive.google.com/drive/quota",
-"https://osanseviero.github.io/hackerllama/blog/posts/random_transformer/",
-"https://github.com/openai/gpt-2",
-"https://www.onlineocr.net/",
-"https://sci-hub.se/",
 "https://libgen.is/",
+"https://zh.z-lib.gs/",
+"https://zlibrary.to/",
+"http://lib.shutong121.com/",
+"https://www.the-blueprints.com/",
+"https://sci-hub.se/",
+"https://github.com/openai/gpt-2",
+"https://sci-hub.se/",
+"https://github.com/f/awesome-chatgpt-prompts/",
+"https://docs.anthropic.com/zh-CN/prompt-library/library",
 "https://thepiratebay.org/index.html",
 "excel2016site:rutracker.org",
-"http://124.42.12.105:54327/",
-"https://platform.openai.com/docs",
 "https://www.wolframalpha.com/",
-"https://modelscope.cn/studios/baichuan-inc/baichuan-7B-demo/",
-"https://jeff.circleo.me/",
-"https://huggingface.co/spaces/stabilityai/stable-diffusion",
 "https://thehackernews.com/",
-"https://drive.google.com/file/d/1VW7sxqMF_1egTDwUFEXJ8kicmsyaZyZB/view",
+"https://www.buyhub.xyz/pdf/Classics-of-Soviet-Mathematics_-L.-S.pdf",
 "https://www.buyhub.xyz/pdf/MathforDeepLearningWhatYouNeedtoUnderstandNeuralNetworks.pdf",
-"https://vitomag.com/science/cgljwv",
-"https://www.buyhub.xyz/pdf/DemidovichProblemsinmathematicalanalysis.pdf",
-"https://github.com/ginuerzh/gost",
-"https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor",
-"https://github.com/camenduru/text-generation-webui-colab",
-"https://colab.research.google.com/github/camenduru/text-generation-webui-colab/blob/main/vicuna-13b-GPTQ-4bit-128g.ipynb",
-'https://arxiv.org/pdf/1706.03762.pdf',
-"https://arxiv.org/pdf/2305.15408.pdf",
-"/https://arxiv.org/pdf/2305.14314.pdf",
-"https://github.com/exacity/deeplearningbook-chinese",
-"https://github.com/huggingface/transformers/blob/main/README_zh-hans.md",
-"https://github.com/THUDM/ChatGLM-6B",
-"https://github.com/artidoro/qlora",
-"https://www.youtube.com/watch?v=Us5ZFp16PaU&ab_channel=SamWitteveen",
-"https://github.com/ggerganov/llama.cpp",
-"https://github.com/ymcui/Chinese-LLaMA-Alpaca-2/wiki/text-generation-webui_zh",
-"https://twitter.com/Tim_Dettmers/status/1661379354507476994",
-"https://cloud.tencent.com/developer/article/2280193?areaSource=106005.17",
-"https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/2/guidelines",
-"https://app.copilothub.ai/",
-"https://discord.com/channels/662267976984297473/997267848118403092",
-"https://www.mathjax.org/#demo",
-"https://workbench.cloud.tencent.com/rdp?region=na-siliconvalley&instanceId=lhins-3g1ad311&source=lighthouse",
-"https://snip.mathpix.com/",
-"https://github.com/rangaeeeee/books-mir-mathematics/tree/master",
-"https://www.chatpdf.com/",
-"http://lib.shutong121.com/",
-"https://github.com/f/awesome-chatgpt-prompts/",
-"https://rargb.to/",
-"https://www.onlinedoctranslator.com/en/translationform",
-"https://matlab.mathworks.com/",
-"https://www.youtube.com/watch?v=s4jtkzHhLzY&t=256s",
-"https://ap.www.namecheap.com/",
-"https://sci-hub.se/",
-"https://zh.zlibrary-global.se/",
-"https://zlibrary.to/",
-"https://leetcode.com/",
+"https://www.buyhub.xyz/pdf/PDEjiangping.pdf",
+"https://www.buyhub.xyz/pdf/MultipleIntegralsFieldTheoryandSeries.pdf",
+"https://www.buyhub.xyz/pdf/PDEjiangping.md",
 "https://colab.research.google.com/?utm_source=scs-index"
 );
 $mathurls = array(
+"https://github.com/Ucas-HaoranWei/GOT-OCR2.0/",
+"https://github.com/coqui-ai/TTS",
+"https://github.com/2noise/ChatTTS",
+"https://github.com/openai/whisper",
+"https://github.com/3b1b/manim",
 "https://www.mathjax.org/#demo",
+"https://github.com/breezedeus/Pix2Text",
+"https://github.com/hiyouga/LLaMA-Factory",
+"https://colab.research.google.com/drive/1DzYRcvOoeYogi2W50awnldFgPLC_-sT-#scrollTo=mbnPkLAOhQ2v",
 "https://www.overleaf.com/project/6506f392bbceaea0da3862c9",
 "https://matlab.mathworks.com",
 "https://snip.mathpix.com",
@@ -282,47 +295,33 @@ $mathurls = array(
 "https://app.copilothub.ai/chat",
 "https://app.copilothub.ai/chatbot?id=9353",
 "https://github.com/PaddlePaddle/PaddleOCR",
+"https://pix2text.readthedocs.io/zh-cn/stable/command/",
 "https://www.youtube.com/watch?v=QuE9PcPoK-U&ab_channel=%E5%A4%A7%E9%B1%BC",
 "https://colab.research.google.com/gist/jimliu/d2f16ce0c6be9df55972e54ae6b6f5e/pdf_to_markdown_by_nougat.ipynb"
 );
 
-$web3urls = array(
-"https://defiprime.com/exchanges",
-"https://www.coingecko.com/en/developers/dashboard",
+$ragweb3urls = array(
+"https://coinmarketcap.com",
 "https://coinmarketcap.com/api/",
+"https://liveuamap.com",
+"https://www.understandingwar.org",
+"https://deepstatemap.live",
+"https://acleddata.com/ukraine-conflict-monitor",
+"https://www.bellingcat.com",
 "http://quote.eastmoney.com/sz000756.html",
-"https://translate.google.com/?sl=en&tl=zh-CN&op=docs",
-"http://quote.eastmoney.com/sz002603.html",
-"https://leetcode.com/",
 "https://colab.research.google.com/?utm_source=scs-index",
 "https://pro.coinmarketcap.com/account",
-"https://www.bilibili.com/video/BV1Ae4y1D7BU/?vd_source=4def9883c7a9cfc2c5071bbb43f7686d",
 "https://www.dygod.net/html/gndy/dyzz/20070509/2035.html",
-"https://breached.to/Thread-Selling-2022-SHGA-Shanghai-Gov-National-Police-database?page=21&highlight=shanghai",
 "https://coinmarketcap.com/currencies/dogecoin/",
 "https://coinmarketcap.com/currencies/shiba-inu/",
 "https://www.coingecko.com/en/coins/gala",
 "https://coinmarketcap.com/api/",
-"https://coinmarketcap.com/api/documentation/v1/",
 "https://unmineable.com/coins/DOGE/address/D8gwrJo8awcUnLPtpgVBL9Lwj4iqJMQpPc",
 "https://unmineable.com/coins/ETh/address/0x754EE4ac33809464ea7Ed2Da9A9B032CA035364b",
 "https://unmineable.com/coins/GALA/address/0x07BB7552e79A0cADCf4Bb56f6e48A50aa36Fb167",
-"https://finance.sina.com.cn/money/forex/hq/BTCETHUSD.shtml",
 "https://cn.investing.com/equities/mitsubishi-heavy-industries,-ltd.",
-"https://i.finance.sina.com.cn/zixuan,all?sudaref=finance.sina.com.cn&display=0&retcode=0",
-"https://mail.qq.com/",
-"https://mail.google.com/mail/u/0/#inbox",
-"https://www.youtube.com/",
-"https://www.bilibili.com/",
-"https://www.linkedin.com/feed/",
-"https://twitter.com/home",
 "https://www.binance.com/zh-CN/markets",
-"https://www.google.com/search?q=Coinbase&oq=co&aqs=chrome.0.69i59j69i57j69i60l4j69i65j69i60.692j0j15&sourceid=chrome&ie=UTF-8",
-"https://www.coinbase.com/",
-"https://www.zhihu.com//",
-"https://www.ixigua.com/home/554626371819964?list_entrance=homepage",
-"http://www.buyhub.xyz/forum",
-"https://buyhub.xyz/wordpress"
+"https://www.coinbase.com/"
 );
 
 echo "<div id='portal' class='portal-section' style='display: flex; flex-wrap: wrap; background-color: lightgreen''>";
@@ -338,26 +337,9 @@ foreach ($portalurls as $url) {
 
 echo "</div>";
 
-
 echo "<div style='display: flex; flex-wrap: wrap; background-color: lightgreen''>";
 
-$html = '<b>AI math,OCR</b>';
-
-// 使用预定义的左对齐样式  
-echo "<div class='text-left'>$html</div>";
-foreach ($mathurls as $url) {
-  $website_name = preg_replace('#^https?://#', '', rtrim($url, '/'));
-  echo "
-  <a href='" . $url . "' target='_blank'>
-    <button style='flex: 0 0 calc(20% - 10px); margin: 5px;'>" . $website_name . "</button>
-  </a>";
-}
-
-echo "</div>";
-
-echo "<div style='display: flex; flex-wrap: wrap; background-color: lightgreen''>";
-
-$html = '<b>AI ENV,Book,Paper,github,sw,vids</b>';
+$html = '<b>AI Book,Paper,Prompt lib,github,sw,ENV,vids</b>';
 
 // 使用预定义的左对齐样式  
 echo "<div class='text-left'>$html</div>";
@@ -371,15 +353,32 @@ foreach ($envurls as $url) {
 
 echo "</div>";
 
+echo "<div style='display: flex; flex-wrap: wrap; background-color: lightgreen''>";
+
+$html = '<b>AI math,STT,TTS,LoRA,RAG,OCR</b>';
+
+// 使用预定义的左对齐样式  
+echo "<div class='text-left'>$html</div>";
+foreach ($mathurls as $url) {
+  $website_name = preg_replace('#^https?://#', '', rtrim($url, '/'));
+  echo "
+  <a href='" . $url . "' target='_blank'>
+    <button style='flex: 0 0 calc(20% - 10px); margin: 5px;'>" . $website_name . "</button>
+  </a>";
+}
+
+echo "</div>";
+
+
 
 
 echo "<div style='display: flex; flex-wrap: wrap; background-color: lightgreen''>";
 
-$html = '<b>web3 crypto coin etc web sites</b>';
+$html = '<b> AI crypto 战争研究所</b>';
 
 // 使用预定义的左对齐样式  
 echo "<div class='text-left'>$html</div>";
-foreach ($web3urls as $url) {
+foreach ($ragweb3urls as $url) {
   $website_name = preg_replace('#^https?://#', '', rtrim($url, '/'));
   echo "
   <a href='" . $url . "' target='_blank'>
@@ -411,6 +410,48 @@ setInterval(function(){
   document.getElementById("time_MOW").innerHTML = "当前莫斯科时间是 " + dt_MOW.toISOString().slice(0, 19).replace('T', ' ');
 }, 1000); 
 </script>
+<?php
+// 设置文件路径
+$filePath = './books/nucleardatautf8.csv'; // 替换为你的文件路径
+
+// 设置 Content-Type 头部，确保输出为 UTF-8
+header("Content-Type: text/html; charset=utf-8");
+
+// 读取 CSV 文件
+$data = [];
+if (($handle = fopen($filePath, "r")) !== FALSE) {
+    while (($line = fgetcsv($handle)) !== FALSE) {
+        $data[] = mb_convert_encoding($line[0], "UTF-8", "auto"); // 自动转换为 UTF-8
+    }
+    fclose($handle);
+}
+
+// 开始输出 HTML 表格
+echo '<table style="width:100%; text-align:left; border-collapse:collapse;">';
+echo '<tr>';
+
+// 定义列计数器
+$colCount = 0;
+foreach ($data as $item) {
+    echo "<td style='border:1px solid #ddd; padding:8px;'>$item</td>";
+    $colCount++;
+
+    // 每满3列换行
+    if ($colCount % 3 == 0) {
+        echo '</tr><tr>';
+    }
+}
+
+// 补齐不足3列的空单元格
+while ($colCount % 3 != 0) {
+    echo "<td style='border:1px solid #ddd; padding:8px;'></td>";
+    $colCount++;
+}
+
+echo '</tr>';
+echo '</table>';
+?>
+
 <?php
 echo "请关注推特账号@CeoSpaceY";
 $visited_file = 'visited.txt';
