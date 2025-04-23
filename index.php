@@ -179,13 +179,14 @@ echo "<font size='6' face='楷体' color = 'Red'> ,you are the " . $linecount . 
 
 <?php
 $portalurls = array(
+"https://chatgpt.com",
 "https://aistudio.google.com",
+"https://grok.com/",
 "https://chat.inceptionlabs.ai/",
 "https://chat.deepseek.com/",
 "https://copilot.microsoft.com/",
 "https://gemini.google.com/app",
 "https://claude.ai/chats",
-"https://chatgpt.com",
 "https://sora.com/",
 "https://learning.google.com/experiments/learn-about",
 "https://ai.google.dev/gemini-api/docs",
