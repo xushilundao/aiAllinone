@@ -80,7 +80,6 @@
         style="height: 560px; border: none; width: 100%; max-width: 1100px; display: block; margin: 10px auto 30px; background-color: transparent;">
     </iframe>
 
-<iframe src="https://shop.kongfz.com/396112" width="100%" height="188px"></iframe> 
     <!-- 广告容器 -->
 
     <script>
@@ -190,14 +189,18 @@ $portalurls = array(
 "https://chatgpt.com",
 "https://aistudio.google.com",
 "https://grok.com/",
-"https://chat.inceptionlabs.ai/",
+"https://jwt.io/",
+"https://www.moyin.com/",
+"https://mulmodal.top/",
 "https://chat.deepseek.com/",
 "https://copilot.microsoft.com/",
 "https://gemini.google.com/app",
 "https://claude.ai/chats",
+"https://www.suno.ai/",
+"https://app.keeptrack.space/",
+"https://cncases.buyhub.xyz/",
+"https://www.buyhub.xyz/queryBooks.php",
 "https://sora.com/",
-"https://learning.google.com/experiments/learn-about",
-"https://ai.google.dev/gemini-api/docs",
 "https://notebooklm.google.com",
 "https://colab.research.google.com/drive/1QDp8hPOZCEWGKqG48UrWyPG211z5Xfj6#scrollTo=lC6sS6DnmGmi",
 "https://glif.app/@Judi_W/glifs/clxwp56c300022ttqygt0v4o5",
@@ -210,9 +213,10 @@ $portalurls = array(
 "https://www.coze.com/home",
 "https://lumalabs.ai/dream-machine",
 "https://groq.com/",
-"https://www.suno.ai/",
+"https://www.youtube.com/playables/Ugkxg96n-JiNmJPfquVuY_zjQIMTHmqs7qxu",
+"https://www.youtube.com/playables/Ugkxk2s909MfhKr5zKwZUPbZdgwXin8tKptu",
+"https://www.youtube.com/playables/UgkxyKs3Ve_RG1PMcTKDbdNtSTCmpKj2kDKj",
 "https://www.buyhub.xyz/ai/",
-"https://www.buyhub.xyz/chat/",
 "https://www.buyhub.xyz/LYIT",
 "https://www.buyhub.xyz/juhe",
 "https://www.buyhub.xyz/gh",
@@ -266,9 +270,8 @@ $portalurls = array(
 );
 
 $envurls = array(
-"https://libgen.is/",
-"https://zh.z-lib.gs/",
-"https://zlibrary.to/",
+"https://annas-archive.org/",
+"https://z-library.sk/",
 "http://lib.shutong121.com/",
 "https://www.the-blueprints.com/",
 "https://sci-hub.se/",
