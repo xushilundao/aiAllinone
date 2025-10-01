@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8" />
+    <title>AI 硬件股票监控</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            background-color: #0f111a;
+        }
+        .tradingview-widget-container {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+{
+    "colorTheme": "dark",
+    "dateRange": "12M",
+    "showChart": true,
+    "locale": "zh_CN",
+    "width": "100%",
+    "height": "100%",
+    "isTransparent": false,
+    "showSymbolLogo": true,
+    "showIntervalTabs": true,
+    "timeframe": "1M",
+    "chartType": "candlesticks",
+    "upColor": "#26a69a",
+    "downColor": "#ef5350",
+    "volumeUpColor": "#26a69a",
+    "volumeDownColor": "#ef5350",
+    "tabs": [
+        {
+            "title": "美股",
+            "symbols": [
+                {"s": "NASDAQ:NVDA", "d": "NVIDIA"},
+                {"s": "NYSE:TSM", "d": "TSMC"},
+                {"s": "NASDAQ:AVGO", "d": "Broadcom"},
+                {"s": "NASDAQ:AMD", "d": "AMD"},
+                {"s": "NASDAQ:INTC", "d": "Intel"},
+                {"s": "NASDAQ:QCOM", "d": "Qualcomm"},
+                {"s": "NASDAQ:MU", "d": "Micron"},
+                {"s": "NASDAQ:ASML", "d": "ASML"},
+                {"s": "NASDAQ:AMAT", "d": "Applied Materials"},
+                {"s": "NASDAQ:LRCX", "d": "Lam Research"}
+            ]
+        },
+        {
+            "title": "中港股",
+            "symbols": [
+                {"s": "SSE:688256", "d": "寒武纪"},
+                {"s": "SSE:688041", "d": "华芯信息"},
+                {"s": "SSE:688981", "d": "中芯国际"},
+                {"s": "HKEX:00981", "d": "中芯国际(港)"},
+                {"s": "HKEX:01347", "d": "华虹半导体"},
+                {"s": "SSE:600584", "d": "长电科技"},
+                {"s": "SZSE:300474", "d": "景嘉微"},
+                {"s": "SSE:603986", "d": "兆易创新"},
+                {"s": "SZSE:002371", "d": "北方华创"},
+                {"s": "SSE:688012", "d": "中微公司"},
+                {"s": "SZSE:002049", "d": "紫光国微"}
+            ]
+        }
+    ]
+}
+        </script>
+    </div>
+</body>
+</html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -10,16 +10,6 @@
             margin-top: 20px;
         }
     </style>
-    <script>
-        $(document).ready(function() {
-            updatePrices();
-            setInterval(updatePrices, 600000); // 每60秒（1分钟）刷新一次
-        });
-
-        function updatePrices() {
-            $("#priceFrame").contents().find("#prices").load("get_prices.php");
-        }
-    </script>
     <title>buyhub.xyzAI网站一网打尽！</title>
     <style>
 .text-left {
@@ -70,7 +60,25 @@
 <body>
 <h1 style="text-align: center; color: #ADD8E6;">buyhub.xyz加密货币价格每小时自动刷新</h1>
 <h1 style="text-align: center; color: #ADD8E6;">http://buyhub.xyz</h1>
-    <iframe src="sortCryp/main.php"></iframe>
+    <!-- ?????????Coingecko???????60???? -->
+    <h2 style="text-align: center; color: #f0f8ff; font-size: 20px; margin-top: 10px;">?????????USD?</h2>
+    <iframe
+        id="cryptoPriceBoard"
+        src="crypto_prices_iframe.php"
+        title="????????"
+        loading="lazy"
+        style="height: 540px; border: none; width: 100%; max-width: 1100px; display: block; margin: 0 auto 30px; background-color: transparent;">
+    </iframe>
+
+    <!-- AI硬件股票行情（月K线，TradingView免费数据源） -->
+    <h2 style="text-align: center; color: #f0f8ff; font-size: 20px; margin-top: 20px;">AI硬件股票（月K线实时行情）</h2>
+    <iframe
+        id="aiHardwareStocks"
+        src="ai_stock_dashboard.html"
+        title="AI硬件股票价格（月K线）"
+        loading="lazy"
+        style="height: 560px; border: none; width: 100%; max-width: 1100px; display: block; margin: 10px auto 30px; background-color: transparent;">
+    </iframe>
 
 <iframe src="https://shop.kongfz.com/396112" width="100%" height="188px"></iframe> 
     <!-- 广告容器 -->
@@ -498,3 +506,4 @@ echo "</div>";
 
 </body>
 </html>
+
