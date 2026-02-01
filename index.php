@@ -1,8 +1,9 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <style>
-        /* 让 iframe 自适应页面 */
+        /* �?iframe 自适应页面 */
         iframe {
             width: 100%;
             height: 500px;
@@ -10,12 +11,12 @@
             margin-top: 20px;
         }
     </style>
-    <title>buyhub.xyzAI网站一网打尽！</title>
+    <title>buyhub.xyzAI�����ȵľۺ���վ</title>
     <style>
 .text-left {
   text-align: left; 
 }
-        /* 设置广告容器的样式 */
+        /* 设置广告容器的样�?*/
         #adContainer {
             position: absolute;
             width: 520px;
@@ -25,7 +26,7 @@
             cursor: pointer;
         }
 
-        /* 设置广告文本的样式 */
+        /* 设置广告文本的样�?*/
         #adText {
             position: absolute;
             width: 100%;
@@ -40,34 +41,34 @@
         .ad-container {
             width: 100%;
             height: 77px;
-            background-color: white; /* 修改背景色为金黄色 */
+            background-color: white; /* 修改背景色为金黄�?*/
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
-            cursor: pointer; /* 设置鼠标样式为手型 */
+            cursor: pointer; /* 设置鼠标样式为手�?*/
         }
 
         .ad-text {
             font-size: 24px;
             font-weight: bold;
-            color: black; /* 修改初始颜色为红色 */
+            color: black; /* 修改初始颜色为红�?*/
         }
 
         /* 文字闪烁动画 */
     </style>
 </head>
 <body>
-<h1 style="text-align: center; color: #ADD8E6;">buyhub.xyz加密货币价格每小时自动刷新</h1>
+<h1 style="text-align: center; color: #ADD8E6;">buyhub.xyz加密货币价格�?0分钟自动刷新</h1>
 <h1 style="text-align: center; color: #ADD8E6;">http://buyhub.xyz</h1>
-    <!-- ?????????Coingecko???????60???? -->
-    <h2 style="text-align: center; color: #f0f8ff; font-size: 20px; margin-top: 10px;">?????????USD?</h2>
+    <!-- ����չʾ��ÿ10�����Զ�ˢ�� -->
+    <h2 style="text-align: center; color: #f0f8ff; font-size: 20px; margin-top: 10px;">�������ܻ��� & A�ɻƽ�/��������USD/CNY��</h2>
     <iframe
         id="cryptoPriceBoard"
         src="crypto_prices_iframe.php"
-        title="????????"
+        title="���ܻ�����ƽ������"
         loading="lazy"
-        style="height: 540px; border: none; width: 100%; max-width: 1100px; display: block; margin: 0 auto 30px; background-color: transparent;">
+        style="height: 1200px; border: none; width: 100%; max-width: 1100px; display: block; margin: 0 auto 30px; background-color: transparent;">
     </iframe>
 
     <!-- AI硬件股票行情（月K线，TradingView免费数据源） -->
@@ -95,18 +96,18 @@
         // 设置广告容器的初始位置和速度
         var x = 0; // 初始水平位置
         var y = 0; // 初始垂直位置
-        var speedX = 1; // 水平移动速度，单位为像素/帧
-        var speedY = 1; // 垂直移动速度，单位为像素/帧
+        var speedX = 1; // 水平移动速度，单位为像素/�?
+        var speedY = 1; // 垂直移动速度，单位为像素/�?
 
         // 定义每一帧的动画函数
         function animate() {
-            // 更新广告容器的位置
+            // 更新广告容器的位�?
             x += speedX;
             y += speedY;
             adContainer.style.left = x + 'px';
             adContainer.style.top = y + 'px';
 
-            // 当广告容器移出屏幕时，将其重新放置到屏幕外，并反向移动
+            // 当广告容器移出屏幕时，将其重新放置到屏幕外，并反向移�?
             if (x >= window.innerWidth || x <= -adContainer.offsetWidth) {
                 speedX = -speedX;
             }
@@ -114,17 +115,17 @@
                 speedY = -speedY;
             }
 
-            // 在下一帧执行动画函数
+            // 在下一帧执行动画函�?
             requestAnimationFrame(animate);
         }
 
-        // 开始执行动画
+        // 开始执行动�?
         animate();
     </script>
 
 
     <script>
-        // 点击通栏广告跳转到指定 URL，并在新标签页打开链接
+        // 点击通栏广告跳转到指�?URL，并在新标签页打开链接
         document.querySelector('.ad-container').addEventListener('click', function() {
             window.open('https://shop.kongfz.com/396112/', '_blank');
         });
@@ -136,7 +137,7 @@
 <?php
 date_default_timezone_set("Asia/Shanghai"); 
 #$visitor_count = 0;
-#$visitor_file = "visitor_count.txt"; // 存储访问者数量的文件名
+#$visitor_file = "visitor_count.txt"; // 存储访问者数量的文件�?
 /*
 
 // 如果文件存在，则读取访问者数量和 IP 地址
@@ -148,7 +149,7 @@ if (file_exists($visitor_file)) {
 }
 
 $ip_address = $_SERVER['REMOTE_ADDR']; // 客户端的 IP 地址
-// 增加访问者数量
+// 增加访问者数�?
 $visitor_count++;
 $visitor_data = $visitor_count . "," . $ip_address;
 file_put_contents($visitor_file, $visitor_data);
@@ -168,20 +169,20 @@ while(!feof($handle)){
 fclose($handle);
 #echo $linecount;
 // 显示欢迎信息
-echo "<font size='4' face='楷体'>www.buyhub.xyz人工智能聚合网站欢迎您!!!尊贵的人工智能科学家,程序员,prompt scientist,火箭总设计师,总架构师,总算法师,总工程师,CTO,研究员,学士,博士,院士们,你们好!www.buyhub.xyz</font> ";
+echo "<font size='4' face='����'>www.buyhub.xyz�˹����ܾۺ���վ��ӭ��!!!�����˹����ܿ�ѧ�ҡ�����Ա��prompt scientist����������ʦ���ܼܹ�ʦ�����㷨ʦ���ܹ���ʦ��CTO���о�Ա��ѧʿ����ʿ��Ժʿ�ǣ����Ǻ�! www.buyhub.xyz</font> ";
 echo "<br><font size='4' face='Times New Roman'>"; 
 echo "Welcome onboard!!Respected AI scientists, programmers, prompt scientists, rocket chief designer, chief architect, chief wizard, chief engineer, CTO, researcher, PHD,mathematicians, </font>";
 echo "Your IP :"     . $ip_address;  
-echo "<font size='6' face='楷体' color = 'Red'> ,you are the " . $linecount . " AI researcher。</font>";
+echo "<font size='6' face='����' color='Red'> ,you are the " . $linecount . " AI researcher��</font>";
 
-// 3分钟闪烁一次
+// 3分钟闪烁一�?
 
 ?>
 <style>.pp-YU3DBAUHTC7WQ{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>
 <form action="https://www.paypal.com/ncp/payment/YU3DBAUHTC7WQ" method="post" target="_top" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
-  <input class="pp-YU3DBAUHTC7WQ" type="submit" value="您的慷慨捐助可以维护我们网站长期的运行！" />
+  <input class="pp-YU3DBAUHTC7WQ" type="submit" value="���Ŀ�����������ά��������վ���ڵ����У�" />
   <img src=https://www.paypalobjects.com/images/Debit_Credit_APM.svg alt="cards" />
-  <section> 技术支持提供方： <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
+  <section> 技术支持提供方�?<img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
 </form>
 
 <?php
@@ -353,7 +354,7 @@ echo "<div style='display: flex; flex-wrap: wrap; background-color: lightgreen''
 
 $html = '<b>AI Book,Paper,Prompt lib,github,sw,ENV,vids</b>';
 
-// 使用预定义的左对齐样式  
+// 使用预定义的左对齐样�? 
 echo "<div class='text-left'>$html</div>";
 foreach ($envurls as $url) {
   $website_name = preg_replace('#^https?://#', '', rtrim($url, '/'));
@@ -369,7 +370,7 @@ echo "<div style='display: flex; flex-wrap: wrap; background-color: lightgreen''
 
 $html = '<b>AI math,STT,TTS,LoRA,RAG,OCR</b>';
 
-// 使用预定义的左对齐样式  
+// 使用预定义的左对齐样�? 
 echo "<div class='text-left'>$html</div>";
 foreach ($mathurls as $url) {
   $website_name = preg_replace('#^https?://#', '', rtrim($url, '/'));
@@ -388,7 +389,7 @@ echo "<div style='display: flex; flex-wrap: wrap; background-color: lightgreen''
 
 $html = '<b> AI crypto 战争研究所</b>';
 
-// 使用预定义的左对齐样式  
+// 使用预定义的左对齐样�? 
 echo "<div class='text-left'>$html</div>";
 foreach ($ragweb3urls as $url) {
   $website_name = preg_replace('#^https?://#', '', rtrim($url, '/'));
@@ -409,13 +410,13 @@ setInterval(function(){
   var tz_LA = "America/Los_Angeles";
   var dt_LA = new Date();
   var dt_LA = new Date(dt_LA.toLocaleString("en-US", {timeZone: tz_LA}));
-  document.getElementById("time_LA").innerHTML = "当前加州时间是 " + dt_LA.toISOString().slice(0, 19).replace('T', ' ');
+  document.getElementById("time_LA").innerHTML = "当前加州时间�?" + dt_LA.toISOString().slice(0, 19).replace('T', ' ');
   // 当前上海时间
   var tz_BJ = "Asia/Shanghai";
   var dt_BJ = new Date();
   var dt_BJ = new Date(dt_BJ.toLocaleString("en-US", {timeZone: tz_BJ}));
-  document.getElementById("time_BJ").innerHTML = "当前上海时间是 " + dt_BJ.toISOString().slice(0, 19).replace('T', ' ');
-  // 当前莫斯科时间
+  document.getElementById("time_BJ").innerHTML = "当前上海时间�?" + dt_BJ.toISOString().slice(0, 19).replace('T', ' ');
+  // 当前莫斯科时�?
   var tz_MOW = "Europe/Moscow";
   var dt_MOW = new Date();
   var dt_MOW = new Date(dt_MOW.toLocaleString("en-US", {timeZone: tz_MOW}));
@@ -424,7 +425,7 @@ setInterval(function(){
 </script>
 <?php
 // 设置文件路径
-$filePath = './books/nucleardatautf8.csv'; // 替换为你的文件路径
+$filePath = './books/nucleardatautf8.csv'; // 替换为你的文件路�?
 
 // 设置 Content-Type 头部，确保输出为 UTF-8
 header("Content-Type: text/html; charset=utf-8");
@@ -433,12 +434,12 @@ header("Content-Type: text/html; charset=utf-8");
 $data = [];
 if (($handle = fopen($filePath, "r")) !== FALSE) {
     while (($line = fgetcsv($handle)) !== FALSE) {
-        $data[] = mb_convert_encoding($line[0], "UTF-8", "auto"); // 自动转换为 UTF-8
+        $data[] = mb_convert_encoding($line[0], "UTF-8", "auto"); // 自动转换�?UTF-8
     }
     fclose($handle);
 }
 
-// 开始输出 HTML 表格
+// 开始输�?HTML 表格
 echo '<table style="width:100%; text-align:left; border-collapse:collapse;">';
 echo '<tr>';
 
@@ -448,7 +449,7 @@ foreach ($data as $item) {
     echo "<td style='border:1px solid #ddd; padding:8px;'>$item</td>";
     $colCount++;
 
-    // 每满3列换行
+    // 每满3列换�?
     if ($colCount % 3 == 0) {
         echo '</tr><tr>';
     }
@@ -474,7 +475,7 @@ $visited_lines = explode("\n", $visited);
 $visited_lines = array_reverse($visited_lines);
 $count = 0; 
 echo "<div style='background: skyblue'>";
-echo "尊贵的AI研究者们,现在我们已经是同志了!最新访问的100位朋友访问了本网站!\n";
+echo "�װ��� AI �о����ǣ������Ѿ���ͬһƵ����������ʵ� 100 λ�������£�\n";
 echo "<br>You are welcome to visit and follow my twitter @CeoSpaceY ,if you have any ideas of AI ,plz share it with my twitter,or you c4n contact m3 in email: linlinsd@gmail.com,title must contain AI";
 
 foreach ($visited_lines as $line) {
@@ -487,12 +488,12 @@ if ($count ==100)
 }
     if ($line) {
         list($ip, $time) = explode(",", $line);
-        echo "<br>$ip 在 $time 访问过";
+        echo "<br>$ip �� $time ���ʹ�";
     } 
 $count++;
 }
 
-// 获取当前访问者IP和时间,并写入visited.txt文件
+// 获取当前访问者IP和时�?并写入visited.txt文件
 $ip = $_SERVER['REMOTE_ADDR'];
 if ($ip == '104.225.146.232' || $ip == '74.120.171.134') {
     $ip = '8.8.8.8';
@@ -509,4 +510,6 @@ echo "</div>";
 
 </body>
 </html>
+
+
 
