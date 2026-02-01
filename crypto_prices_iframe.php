@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
-// 行情 iframe：10 分钟自动刷新，使用免费公开数据源（CoinGecko + 新浪）。
+// Market iframe: 10-minute refresh using free sources (CoinGecko + Sina).
 $cryptos = [
     'bitcoin'            => ['label' => 'Bitcoin',           'ticker' => 'BTC'],
     'ethereum'           => ['label' => 'Ethereum',          'ticker' => 'ETH'],
@@ -114,7 +114,7 @@ $lastUpdated  = date('Y-m-d H:i:s');
 <html lang="zh">
 <head>
     <meta charset="UTF-8" />
-    <title>行情看板</title>
+    <title>Market Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="refresh" content="600">
     <style>
@@ -147,13 +147,13 @@ $lastUpdated  = date('Y-m-d H:i:s');
 <body>
     <div class="wrapper">
         <div class="section">
-            <h2>主流加密货币（USD）</h2>
+            <h2>Major Cryptocurrencies (USD)</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>币种</th>
-                        <th>代码</th>
-                        <th>价格 (USD)</th>
+                        <th>Asset</th>
+                        <th>Symbol</th>
+                        <th>Price (USD)</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -189,7 +189,7 @@ $lastUpdated  = date('Y-m-d H:i:s');
     "chartType": "candlesticks",
     "tabs": [
         {
-            "title": "加密日K/分时",
+            "title": "Crypto 1D & Intraday",
             "symbols": [
                 {"s": "BINANCE:BTCUSDT", "d": "BTC"},
                 {"s": "BINANCE:ETHUSDT", "d": "ETH"},
@@ -208,13 +208,13 @@ $lastUpdated  = date('Y-m-d H:i:s');
         </div>
 
         <div class="section">
-            <h2>A股黄金/白银矿产股</h2>
+            <h2>CN Gold / Silver Miners (CNY)</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>股票</th>
-                        <th>代码</th>
-                        <th>价格 (CNY)</th>
+                        <th>Stock</th>
+                        <th>Ticker</th>
+                        <th>Price (CNY)</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -238,7 +238,7 @@ $lastUpdated  = date('Y-m-d H:i:s');
                     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
 {
     "colorTheme": "dark",
-    "dateRange": "1M",
+    "dateRange": "11D",
     "showChart": true,
     "locale": "zh_CN",
     "width": "100%",
@@ -250,18 +250,18 @@ $lastUpdated  = date('Y-m-d H:i:s');
     "chartType": "candlesticks",
     "tabs": [
         {
-            "title": "A股黄金/白银",
+            "title": "A-share Gold/Silver (11-day view)",
             "symbols": [
-                {"s": "SSE:601899", "d": "紫金矿业"},
-                {"s": "SSE:600489", "d": "中金黄金"},
-                {"s": "SSE:600547", "d": "山东黄金"},
-                {"s": "SZSE:002237", "d": "恒邦股份"},
-                {"s": "SZSE:000975", "d": "银泰黄金"},
-                {"s": "SSE:601069", "d": "西部黄金"},
-                {"s": "SSE:600988", "d": "赤峰黄金"},
-                {"s": "SZSE:000603", "d": "盛达资源"},
-                {"s": "SSE:601212", "d": "白银有色"},
-                {"s": "SZSE:002155", "d": "湖南黄金"}
+                {"s": "SSE:601899", "d": "Zijin Mining"},
+                {"s": "SSE:600489", "d": "Zhongjin Gold"},
+                {"s": "SSE:600547", "d": "Shandong Gold"},
+                {"s": "SZSE:002237", "d": "Hengbang Co."},
+                {"s": "SZSE:000975", "d": "Yintai Gold"},
+                {"s": "SSE:601069", "d": "West Gold"},
+                {"s": "SSE:600988", "d": "Chifeng Gold"},
+                {"s": "SZSE:000603", "d": "Shengda Resources"},
+                {"s": "SSE:601212", "d": "China Silver"},
+                {"s": "SZSE:002155", "d": "Hunan Gold"}
             ]
         }
     ]
@@ -271,7 +271,43 @@ $lastUpdated  = date('Y-m-d H:i:s');
             </div>
         </div>
 
-        <div class="timestamp">最后更新：<?= htmlspecialchars($lastUpdated, ENT_QUOTES, 'UTF-8') ?>（每10分钟自动刷新）</div>
+        <div class="section">
+            <h2>Global Metals Futures (USD)</h2>
+            <div class="tv-wrap">
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+{
+    "colorTheme": "dark",
+    "dateRange": "1M",
+    "showChart": true,
+    "locale": "en",
+    "width": "100%",
+    "height": "500",
+    "isTransparent": false,
+    "showSymbolLogo": true,
+    "showIntervalTabs": true,
+    "timeframe": "1D",
+    "chartType": "candlesticks",
+    "tabs": [
+        {
+            "title": "CME/COMEX/TOCOM",
+            "symbols": [
+                {"s": "COMEX:GC1!", "d": "Gold Futures"},
+                {"s": "COMEX:SI1!", "d": "Silver Futures"},
+                {"s": "COMEX:HG1!", "d": "Copper Futures"},
+                {"s": "TOCOM:JAU1!", "d": "Tokyo Gold"},
+                {"s": "TOCOM:JAU", "d": "Tokyo Gold Nearby"}
+            ]
+        }
+    ]
+}
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <div class="timestamp">Last update: <?= htmlspecialchars($lastUpdated, ENT_QUOTES, 'UTF-8') ?> (auto refresh every 10 minutes)</div>
     </div>
 </body>
 </html>
