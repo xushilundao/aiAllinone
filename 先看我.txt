@@ -1,0 +1,45 @@
+项目：aiAllinone 自动化同步与部署手册
+适用环境：Ubuntu (WSL) / 生产服务器
+核心逻辑：强制拉取远程最新代码 -> 记录变更清单 -> 自动同步至 Web 根目录
+
+1. 强制同步远程代码（抛弃本地冲突）
+如果你在 GitHub 上修改了代码，本地只需执行这组命令，确保本地与 Server 100% 一致。
+
+Bash
+# 获取远程更新索引
+git fetch origin main
+
+# 强制重置，抹平所有本地修改
+git reset --hard origin/main
+
+# 确认当前状态（应显示 "Your branch is up to date"）
+git status
+2. 生成待拷贝文件清单
+如果你只想拷贝特定的文件（如 PHP 逻辑和 JSON 配置），先将文件名存入清单：
+
+Bash
+# 自动筛选最近修改的 php 和 json 文件并存入 copy.txt
+# 或者手动编辑 copy.txt 填入你想要的文件名
+ls -1 *.php *.json *.html > copy.txt
+
+echo "--- 当前待处理清单内容 ---"
+cat copy.txt
+3. 执行自动化拷贝脚本
+使用最严谨的 while 循环，确保带空格的文件名也能正确处理，并保留文件权限。
+执行copyFile.sh即可。
+Bash
+# 直接在终端运行以下代码块
+while IFS= read -r line; do
+    if [ -f "$line" ]; then
+        cp -p "$line" ..
+        echo " [OK] 已同步: $line"
+    else
+        echo " [SKIP] 文件不存在: $line"
+    fi
+done < copy.txt
+4. 权限检查（可选）
+如果拷贝到上级目录后 Web 无法访问，通常是所有者权限问题，执行以下命令恢复：
+
+Bash
+# 假设你的 Web 用户是 ceo
+sudo chown ceo:ceo ../*.php
