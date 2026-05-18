@@ -175,7 +175,7 @@ while(!feof($handle)){
 fclose($handle);
 #echo $linecount;
 // Show welcome message
-echo "<font size='4' face='����'>www.buyhub.xyz�˹����ܾۺ���վ��ӭ��!!!�����˹����ܿ�ѧ�ҡ�����Ա��prompt scientist����������ʦ���ܼܹ�ʦ�����㷨ʦ���ܹ���ʦ��CTO���о�Ա��ѧʿ����ʿ��Ժʿ�ǣ����Ǻ�! www.buyhub.xyz</font> ";
+echo "<font size='4' >welcome to AI,Science,SW  world</font> ";
 echo "<br><font size='4' face='Times New Roman'>"; 
 echo "Welcome onboard!!Respected AI scientists, programmers, prompt scientists, rocket chief designer, chief architect, chief wizard, chief engineer, CTO, researcher, PHD,mathematicians, </font>";
 echo "Your IP :"     . $ip_address;  
@@ -186,7 +186,7 @@ echo "<font size='6' face='����' color='Red'> ,you are the " . $linecoun
 ?>
 <style>.pp-YU3DBAUHTC7WQ{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>
 <form action="https://www.paypal.com/ncp/payment/YU3DBAUHTC7WQ" method="post" target="_top" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
-  <input class="pp-YU3DBAUHTC7WQ" type="submit" value="���Ŀ�����������ά��������վ���ڵ����У�" />
+  <input class="pp-YU3DBAUHTC7WQ" type="submit" value="Buy me a coffee!Support us!" />
   <img src=https://www.paypalobjects.com/images/Debit_Credit_APM.svg alt="cards" />
   <section> Technical support by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
 </form>
@@ -194,21 +194,24 @@ echo "<font size='6' face='����' color='Red'> ,you are the " . $linecoun
 <?php
 $portalurls = array(
 "https://chatgpt.com",
+"https://thepiratebay.org",
+"https://gemini.google.com/app",
 "https://aistudio.google.com",
+"https://notebooklm.google.com",
+"https://www.paypal.com/buttons/saved",
 "https://grok.com/",
 "https://jwt.io/",
+"http://192.168.10.86:18789/overview",
 "https://www.moyin.com/",
 "https://mulmodal.top/",
 "https://chat.deepseek.com/",
 "https://copilot.microsoft.com/",
-"https://gemini.google.com/app",
 "https://claude.ai/chats",
 "https://www.suno.ai/",
 "https://app.keeptrack.space/",
 "https://cncases.buyhub.xyz/",
 "https://www.buyhub.xyz/queryBooks.php",
 "https://sora.com/",
-"https://notebooklm.google.com",
 "https://colab.research.google.com/drive/1QDp8hPOZCEWGKqG48UrWyPG211z5Xfj6#scrollTo=lC6sS6DnmGmi",
 "https://glif.app/@Judi_W/glifs/clxwp56c300022ttqygt0v4o5",
 "https://glif.app/@Sheldon-master",
@@ -266,7 +269,7 @@ $portalurls = array(
 "https://replicate.com/kcaverly/dolphin-2.5-mixtral-8x7b-gguf",
 "https://catjourney.life/",
 "https://colab.research.google.com/github/camenduru/MagicAnimate-colab/blob/main/MagicAnimate_colab.ipynb",
-"https://nn.labml.ai/transformers/index.html",
+"https://nn.labml.ai/transformers",
 "https://huggingface.co/spaces/TencentARC/PhotoMaker-Style",
 "https://github.com/pdf2htmlEX/pdf2htmlEX/releases",
 "https://mp.weixin.qq.com/s/2pt29rGV5Mb1GEvapZ8ZwA",
@@ -277,7 +280,7 @@ $portalurls = array(
 );
 
 $envurls = array(
-"https://annas-archive.org/",
+"https://annas-archive.pk/",
 "https://z-library.sk/",
 "http://lib.shutong121.com/",
 "https://www.the-blueprints.com/",
@@ -286,7 +289,6 @@ $envurls = array(
 "https://sci-hub.se/",
 "https://github.com/f/awesome-chatgpt-prompts/",
 "https://docs.anthropic.com/zh-CN/prompt-library/library",
-"https://thepiratebay.org/index.html",
 "excel2016site:rutracker.org",
 "https://www.wolframalpha.com/",
 "https://thehackernews.com/",
@@ -320,7 +322,10 @@ $mathurls = array(
 );
 
 $ragweb3urls = array(
+"https://thepiratebay.org/",
 "https://coinmarketcap.com",
+"https://www.msdmanuals.cn/professional/health-topics",
+	"https://www.pizzint.watch/",
 "https://coinmarketcap.com/api/",
 "https://liveuamap.com",
 "https://www.understandingwar.org",
