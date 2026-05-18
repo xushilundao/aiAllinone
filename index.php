@@ -80,6 +80,17 @@
         loading="lazy"
         style="height: 560px; border: none; width: 100%; max-width: 1100px; display: block; margin: 10px auto 30px; background-color: transparent;">
     </iframe>
+
+    <!-- AI Storage Stock Prices (Backend Scraper) -->
+    <h2 style="text-align: center; color: #f0f8ff; font-size: 20px; margin-top: 20px;">AI Storage Stock Prices (KRX/TWSE/US)</h2>
+    <iframe
+        id="aiStorageStocks"
+        src="mem_stocks_data.php"
+        title="AI Storage Stocks (Live Data)"
+        loading="lazy"
+        style="height: 600px; border: none; width: 100%; max-width: 1100px; display: block; margin: 10px auto 30px; background-color: transparent;">
+    </iframe>
+
     <h2 style="text-align: center; color: #f0f8ff; font-size: 20px; margin-top: 20px;">Weekly Football & Sports Lottery (Predictions)</h2>
     <iframe
         id="footballBoard"
