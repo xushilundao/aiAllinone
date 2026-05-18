@@ -2,28 +2,26 @@
 header('Content-Type: text/html; charset=UTF-8');
 
 /**
- * AI Memory Stocks Fetcher - Version 5 (Stability Fix)
+ * Global Metals Futures Fetcher - Version 1
+ * Caching: 2 hours
  */
 
-$cache_file = 'mem_stocks_cache.json';
+$cache_file = 'metals_futures_cache.json';
 $cache_time = 7200; // 2 hours
 
-$stocks = [
-    '000660.KS' => ['desc' => 'SK海力士 (韩)'],
-    '005930.KS' => ['desc' => '三星电子 (韩)'],
-    '2408.TW'   => ['desc' => '南亚科 (台)'],
-    '2337.TW'   => ['desc' => '旺宏 (台)'],
-    '2344.TW'   => ['desc' => '华邦电 (台)'],
-    'MU'        => ['desc' => '美光 (美)'],
-    'WDC'       => ['desc' => '西部数据 (美)'],
-    'STX'       => ['desc' => '希捷 (美)']
+$metals = [
+    'GC=F' => ['desc' => '黄金期货 (COMEX)'],
+    'SI=F' => ['desc' => '白银期货 (COMEX)'],
+    'HG=F' => ['desc' => '精铜期货 (COMEX)'],
+    'PL=F' => ['desc' => '铂金期货 (NYMEX)'],
+    'PA=F' => ['desc' => '钯金期货 (NYMEX)'],
+    'JPY=X' => ['desc' => '日元/美元 (参考)']
 ];
 
-function fetch_stock_prices($stocks) {
+function fetch_metal_prices($metals) {
     $results = [];
     
-    foreach ($stocks as $ticker => $info) {
-        // Fetch 1 month range to calculate both daily and monthly changes
+    foreach ($metals as $ticker => $info) {
         $url = "https://query1.finance.yahoo.com/v8/finance/chart/{$ticker}?interval=1d&range=1mo";
         
         $ch = curl_init();
@@ -31,14 +29,13 @@ function fetch_stock_prices($stocks) {
             CURLOPT_URL => $url,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_TIMEOUT => 15,
-            CURLOPT_SSL_VERIFYPEER => false, // Required for local Win10 XAMPP
-            CURLOPT_USERAGENT => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+            CURLOPT_SSL_VERIFYPEER => false,
+            CURLOPT_USERAGENT => 'Mozilla/5.0'
         ]);
         
         $resp = curl_exec($ch);
         curl_close($ch);
         
-        // Initialize default values to avoid "Undefined array key" warnings
         $data_row = [
             'price' => 'N/A',
             'daily_change' => '0.00%',
@@ -54,16 +51,12 @@ function fetch_stock_prices($stocks) {
             if ($res) {
                 $meta = $res['meta'];
                 $prices = $res['indicators']['quote'][0]['close'] ?? [];
-                // Filter out NULL values from the array
                 $prices = array_values(array_filter($prices, function($v) { return !is_null($v); }));
 
                 if (count($prices) >= 1) {
                     $current = $meta['regularMarketPrice'] ?? end($prices);
+                    $data_row['price'] = number_format($current, 2);
                     
-                    // Format price: No decimals for large KRW values
-                    $data_row['price'] = ($current > 1000) ? number_format($current, 0) : number_format($current, 2);
-                    
-                    // Daily Change Calculation
                     if (count($prices) >= 2) {
                         $yesterday = $prices[count($prices) - 2];
                         $d_diff = $current - $yesterday;
@@ -72,7 +65,6 @@ function fetch_stock_prices($stocks) {
                         $data_row['daily_color'] = ($d_diff >= 0) ? '#26a69a' : '#ef5350';
                     }
 
-                    // Monthly Change Calculation
                     $start_month = $prices[0];
                     $m_diff = $current - $start_month;
                     $m_pct = ($start_month > 0) ? ($m_diff / $start_month) * 100 : 0;
@@ -86,16 +78,13 @@ function fetch_stock_prices($stocks) {
     return $results;
 }
 
-// Caching logic
 $data_to_show = [];
 if (file_exists($cache_file) && (time() - filemtime($cache_file) < $cache_time)) {
-    $cached_content = file_get_contents($cache_file);
-    $data_to_show = json_decode($cached_content, true);
+    $data_to_show = json_decode(file_get_contents($cache_file), true);
 } 
 
-// If cache is missing, empty, or expired, fetch new data
 if (empty($data_to_show)) {
-    $data_to_show = fetch_stock_prices($stocks);
+    $data_to_show = fetch_metal_prices($metals);
     if (!empty($data_to_show)) {
         file_put_contents($cache_file, json_encode($data_to_show));
     }
@@ -112,7 +101,7 @@ $last_update = file_exists($cache_file) ? date('Y-m-d H:i:s', filemtime($cache_f
         .container { padding: 10px; }
         table { width: 100%; border-collapse: collapse; background-color: #111728; border-radius: 8px; overflow: hidden; font-size: 13px; table-layout: fixed; }
         th, td { padding: 10px 8px; text-align: right; border-bottom: 1px solid #1a2239; word-wrap: break-word; }
-        th:first-child, td:first-child { text-align: left; width: 35%; }
+        th:first-child, td:first-child { text-align: left; width: 40%; }
         th { background-color: #151d33; color: #a8b3cf; font-weight: 600; }
         .price { font-family: "Roboto Mono", monospace; font-weight: bold; }
         .change { font-weight: bold; }
@@ -125,27 +114,21 @@ $last_update = file_exists($cache_file) ? date('Y-m-d H:i:s', filemtime($cache_f
         <table>
             <thead>
                 <tr>
-                    <th>股票名称</th>
-                    <th>最新价</th>
+                    <th>期货名称</th>
+                    <th>价格</th>
                     <th>今日</th>
                     <th>本月</th>
                 </tr>
             </thead>
             <tbody>
-                <?php if (!empty($data_to_show)): ?>
-                    <?php foreach ($data_to_show as $ticker => $row): ?>
-                    <tr>
-                        <td><?= htmlspecialchars($row['desc']) ?><small><?= $ticker ?></small></td>
-                        <td class="price"><?= isset($row['price']) ? $row['price'] : 'N/A' ?></td>
-                        <td class="change" style="color: <?= isset($row['daily_color']) ? $row['daily_color'] : '#fff' ?>">
-                            <?= isset($row['daily_change']) ? $row['daily_change'] : '0.00%' ?>
-                        </td>
-                        <td class="change" style="color: <?= isset($row['monthly_color']) ? $row['monthly_color'] : '#fff' ?>">
-                            <?= isset($row['monthly_change']) ? $row['monthly_change'] : '0.00%' ?>
-                        </td>
-                    </tr>
-                    <?php endforeach; ?>
-                <?php endif; ?>
+                <?php foreach ($data_to_show as $ticker => $row): ?>
+                <tr>
+                    <td><?= htmlspecialchars($row['desc']) ?><small><?= $ticker ?></small></td>
+                    <td class="price"><?= $row['price'] ?></td>
+                    <td class="change" style="color: <?= $row['daily_color'] ?>"><?= $row['daily_change'] ?></td>
+                    <td class="change" style="color: <?= $row['monthly_color'] ?>"><?= $row['monthly_change'] ?></td>
+                </tr>
+                <?php endforeach; ?>
             </tbody>
         </table>
         <div class="footer">更新于: <?= $last_update ?> (2h Cache)</div>

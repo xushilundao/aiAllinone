@@ -82,7 +82,7 @@
     </iframe>
 
     <!-- AI Storage Stock Prices (Backend Scraper) -->
-    <h2 style="text-align: center; color: #f0f8ff; font-size: 20px; margin-top: 20px;">AI Storage Stock Prices (KRX/TWSE/US)</h2>
+    <h2 style="text-align: center; color: #000000; font-size: 20px; margin-top: 20px;">AI Storage Stock Prices (KRX/TWSE/US)</h2>
     <iframe
         id="aiStorageStocks"
         src="mem_stocks_data.php"
