@@ -210,6 +210,7 @@ $portalurls = array(
 "https://aistudio.google.com",
 "https://notebooklm.google.com",
 "https://www.paypal.com/buttons/saved",
+"http://mechanics.autos:3000/",
 "https://grok.com/",
 "https://jwt.io/",
 "http://192.168.10.86:18789/overview",
