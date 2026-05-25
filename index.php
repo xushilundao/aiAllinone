@@ -72,13 +72,13 @@
     </iframe>
 
     <!-- AI hardware stocks (monthly candlestick, TradingView free feed) -->
-    <h2 style="text-align: center; color: #f0f8ff; font-size: 20px; margin-top: 20px;">AI Hardware Stocks (Monthly Candles)</h2>
+    <h2 style="text-align: center; color: #000000; font-size: 20px; margin-top: 20px;">AI Hardware Stocks (Monthly Candles)</h2>
     <iframe
         id="aiHardwareStocks"
         src="ai_stock_dashboard.html"
         title="AI Hardware Stocks (Monthly)"
         loading="lazy"
-        style="height: 560px; border: none; width: 100%; max-width: 1100px; display: block; margin: 10px auto 30px; background-color: transparent;">
+        style="height: 560px; color: #000000; border: none; width: 100%; max-width: 1100px; display: block; margin: 10px auto 30px; background-color: transparent;">
     </iframe>
 
     <!-- AI Storage Stock Prices (Backend Scraper) -->
@@ -91,7 +91,7 @@
         style="height: 600px; border: none; width: 100%; max-width: 1100px; display: block; margin: 10px auto 30px; background-color: transparent;">
     </iframe>
 
-    <h2 style="text-align: center; color: #f0f8ff; font-size: 20px; margin-top: 20px;">Weekly Football & Sports Lottery (Predictions)</h2>
+    <h2 style="text-align: center; color: #000000; font-size: 20px; margin-top: 20px;">Weekly Football & Sports Lottery (Predictions)</h2>
     <iframe
         id="footballBoard"
         src="football/fixtures.php"
