@@ -1,0 +1,213 @@
+{
+    "updated_at": "2026-10-30 06:21:53 GMT",
+    "period_start": "2026-10-23",
+    "models": [
+        {
+            "name": "Unlimited-OCR-2",
+            "company": "Baidu",
+            "region": "China",
+            "category": "图像 / 多模态",
+            "source": "Hugging Face",
+            "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+            "release_date": "2026-10-26",
+            "description": "",
+            "downloads": 18141,
+            "likes": 418,
+            "trending_score": 0,
+            "tags": [
+                "transformers",
+                "safetensors",
+                "unlimited-ocr",
+                "feature-extraction",
+                "baidu",
+                "vision-language"
+            ]
+        },
+        {
+            "name": "Ling-3.1-flash-1019",
+            "company": "01.AI",
+            "region": "China",
+            "category": "文本 / 多模态",
+            "source": "Hugging Face",
+            "url": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019",
+            "release_date": "2026-10-27",
+            "description": "",
+            "downloads": 832,
+            "likes": 81,
+            "trending_score": 0,
+            "tags": [
+                "safetensors",
+                "bailing_hybrid",
+                "text-generation",
+                "conversational",
+                "custom_code",
+                "license:mit"
+            ]
+        },
+        {
+            "name": "LBS-27B",
+            "company": "01.AI",
+            "region": "China",
+            "category": "图像 / 多模态",
+            "source": "Hugging Face",
+            "url": "https://huggingface.co/inclusionAI/LBS-27B",
+            "release_date": "2026-10-26",
+            "description": "",
+            "downloads": 484,
+            "likes": 15,
+            "trending_score": 0,
+            "tags": [
+                "safetensors",
+                "qwen3_5",
+                "gui-grounding",
+                "agentic-vision",
+                "visual-question-answering",
+                "high-resolution"
+            ]
+        },
+        {
+            "name": "Atria-Dawn",
+            "company": "Shanghai AI Lab",
+            "region": "China",
+            "category": "文本 / 多模态",
+            "source": "Hugging Face",
+            "url": "https://huggingface.co/internlm/Atria-Dawn",
+            "release_date": "2026-10-23",
+            "description": "",
+            "downloads": 250,
+            "likes": 15,
+            "trending_score": 0,
+            "tags": [
+                "safetensors",
+                "glm_moe_dsa",
+                "arxiv:2609.15818",
+                "region:us"
+            ]
+        },
+        {
+            "name": "Ling-3.1-flash-base",
+            "company": "01.AI",
+            "region": "China",
+            "category": "文本 / 多模态",
+            "source": "Hugging Face",
+            "url": "https://huggingface.co/inclusionAI/Ling-3.1-flash-base",
+            "release_date": "2026-10-25",
+            "description": "",
+            "downloads": 181,
+            "likes": 13,
+            "trending_score": 0,
+            "tags": [
+                "safetensors",
+                "bailing_hybrid",
+                "text-generation",
+                "conversational",
+                "custom_code",
+                "license:mit"
+            ]
+        },
+        {
+            "name": "Metatron-v1",
+            "company": "NVIDIA",
+            "region": "US",
+            "category": "文本 / 多模态",
+            "source": "Hugging Face",
+            "url": "https://huggingface.co/nvidia/Metatron-v1",
+            "release_date": "2026-10-27",
+            "description": "",
+            "downloads": 463,
+            "likes": 8,
+            "trending_score": 0,
+            "tags": [
+                "onnx",
+                "robotics",
+                "reinforcement-learning",
+                "humanoid",
+                "metatron",
+                "en"
+            ]
+        },
+        {
+            "name": "MotionBricks",
+            "company": "NVIDIA",
+            "region": "US",
+            "category": "文本 / 多模态",
+            "source": "Hugging Face",
+            "url": "https://huggingface.co/nvidia/MotionBricks",
+            "release_date": "2026-10-23",
+            "description": "",
+            "downloads": 0,
+            "likes": 100,
+            "trending_score": 0,
+            "tags": [
+                "pytorch",
+                "nvidia",
+                "motionbricks",
+                "motion-generation",
+                "pose-conditioned",
+                "robotics"
+            ]
+        },
+        {
+            "name": "Qwen3.8-Flash-Next-singprobe",
+            "company": "01.AI",
+            "region": "China",
+            "category": "文本 / 多模态",
+            "source": "Hugging Face",
+            "url": "https://huggingface.co/inclusionAI/Qwen3.8-Flash-Next-singprobe",
+            "release_date": "2026-10-27",
+            "description": "",
+            "downloads": 353,
+            "likes": 2,
+            "trending_score": 0,
+            "tags": [
+                "safetensors",
+                "sing_probe_attn",
+                "safety",
+                "guardrail",
+                "hallucination-detection",
+                "streaming"
+            ]
+        },
+        {
+            "name": "Atria-Dawn-FP8",
+            "company": "Shanghai AI Lab",
+            "region": "China",
+            "category": "文本 / 多模态",
+            "source": "Hugging Face",
+            "url": "https://huggingface.co/internlm/Atria-Dawn-FP8",
+            "release_date": "2026-10-23",
+            "description": "",
+            "downloads": 79,
+            "likes": 3,
+            "trending_score": 0,
+            "tags": [
+                "safetensors",
+                "glm_moe_dsa",
+                "arxiv:2609.15818",
+                "fp8",
+                "region:us"
+            ]
+        },
+        {
+            "name": "GLM-5.3-Flash-singprobe",
+            "company": "01.AI",
+            "region": "China",
+            "category": "文本 / 多模态",
+            "source": "Hugging Face",
+            "url": "https://huggingface.co/inclusionAI/GLM-5.3-Flash-singprobe",
+            "release_date": "2026-10-27",
+            "description": "",
+            "downloads": 265,
+            "likes": 1,
+            "trending_score": 0,
+            "tags": [
+                "safetensors",
+                "sing_probe_attn",
+                "safety",
+                "guardrail",
+                "hallucination-detection",
+                "streaming"
+            ]
+        }
+    ]
+}

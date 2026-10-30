@@ -1,3 +1,9 @@
 # Replace /path/to/site before installing.
 # Weekly GitHub refresh every Monday at 06:25 server time.
 25 6 * * 1 /usr/bin/php /path/to/site/scripts/update_github_weekly.php >> /path/to/site/data/cron.log 2>&1
+# Weekly AI model release refresh every Monday at 06:35 server time.
+35 6 * * 1 /usr/bin/php /path/to/site/scripts/update_ai_models_weekly.php >> /path/to/site/data/cron.log 2>&1
+# Weekly creator economy and video/image trends every Monday at 06:45.
+45 6 * * 1 /usr/bin/php /path/to/site/scripts/update_creator_economy_weekly.php >> /path/to/site/data/cron.log 2>&1
+# Fresh cybersecurity and AI red-team headlines every day at 07:00.
+0 7 * * * /usr/bin/php /path/to/site/scripts/update_security_weekly.php >> /path/to/site/data/cron.log 2>&1

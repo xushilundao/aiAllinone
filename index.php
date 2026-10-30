@@ -99,6 +99,30 @@
         loading="lazy"
         style="height: 900px; border: none; width: 100%; max-width: 1100px; display: block; margin: 10px auto 30px; background-color: transparent;">
     </iframe>
+    <h2 style="text-align: center; color: #000000; font-size: 20px; margin-top: 20px;">Weekly AI Model Releases Top 10 · 中美头部厂商</h2>
+    <iframe
+        id="weeklyAiModels"
+        src="ai_models_weekly.php"
+        title="Weekly top AI model releases from leading US and Chinese companies"
+        loading="lazy"
+        style="height: 1150px; border: none; width: 100%; max-width: 1100px; display: block; margin: 10px auto 30px; background-color: transparent;">
+    </iframe>
+    <h2 style="text-align: center; color: #000000; font-size: 20px; margin-top: 20px;">Cybersecurity Weekly Top 10 · 漏洞 / 逆向 / LLM Red Team</h2>
+    <iframe
+        id="securityWeekly"
+        src="security_weekly.php"
+        title="Weekly cybersecurity and AI red team news"
+        loading="lazy"
+        style="height: 1150px; border: none; width: 100%; max-width: 1100px; display: block; margin: 10px auto 30px; background-color: transparent;">
+    </iframe>
+    <h2 style="text-align: center; color: #000000; font-size: 20px; margin-top: 20px;">AI 视频 / 图片创作与变现 Top 10</h2>
+    <iframe
+        id="creatorEconomyWeekly"
+        src="creator_economy_weekly.php"
+        title="AI image and video creator business resources and weekly trends"
+        loading="lazy"
+        style="height: 1900px; border: none; width: 100%; max-width: 1100px; display: block; margin: 10px auto 30px; background-color: transparent;">
+    </iframe>
     <h2 style="text-align: center; color: #000000; font-size: 20px; margin-top: 20px;">X AI KOL Top 10 · 中文 / English / العربية</h2>
     <iframe
         id="xAiBoard"
