@@ -1,0 +1,3 @@
+# Replace /path/to/site before installing.
+# Weekly GitHub refresh every Monday at 06:25 server time.
+25 6 * * 1 /usr/bin/php /path/to/site/scripts/update_github_weekly.php >> /path/to/site/data/cron.log 2>&1

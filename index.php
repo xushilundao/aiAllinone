@@ -91,13 +91,21 @@
         style="height: 600px; border: none; width: 100%; max-width: 1100px; display: block; margin: 10px auto 30px; background-color: transparent;">
     </iframe>
 
-    <h2 style="text-align: center; color: #000000; font-size: 20px; margin-top: 20px;">Weekly Football & Sports Lottery (Predictions)</h2>
+    <h2 style="text-align: center; color: #000000; font-size: 20px; margin-top: 20px;">GitHub Weekly Top 10 Repositories</h2>
     <iframe
-        id="footballBoard"
-        src="football/fixtures.php"
-        title="Weekly Football & Lottery"
+        id="githubWeeklyBoard"
+        src="github_trending.php"
+        title="GitHub Weekly Top 10 Repositories"
         loading="lazy"
-        style="height: 520px; border: none; width: 100%; max-width: 1100px; display: block; margin: 10px auto 30px; background-color: transparent;">
+        style="height: 900px; border: none; width: 100%; max-width: 1100px; display: block; margin: 10px auto 30px; background-color: transparent;">
+    </iframe>
+    <h2 style="text-align: center; color: #000000; font-size: 20px; margin-top: 20px;">X AI KOL Top 10 · 中文 / English / العربية</h2>
+    <iframe
+        id="xAiBoard"
+        src="x_ai_trending.php"
+        title="Curated AI KOL directory on X in Chinese, English, and Arabic"
+        loading="lazy"
+        style="height: 1500px; border: none; width: 100%; max-width: 1100px; display: block; margin: 10px auto 30px; background-color: transparent;">
     </iframe>
     <!-- Ad container -->
 

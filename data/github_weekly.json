@@ -1,0 +1,96 @@
+{
+    "updated_at": "2026-10-30 05:15:26 UTC",
+    "period_start": "2026-10-23",
+    "repositories": [
+        {
+            "name": "public-apis/public-apis",
+            "url": "https://github.com/public-apis/public-apis",
+            "description": "A collective list of free APIs",
+            "language": "Python",
+            "stars": 493330,
+            "forks": 55018,
+            "pushed_at": "2026-10-29T14:36:24Z"
+        },
+        {
+            "name": "freeCodeCamp/freeCodeCamp",
+            "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+            "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+            "language": "TypeScript",
+            "stars": 458203,
+            "forks": 48726,
+            "pushed_at": "2026-10-30T00:00:43Z"
+        },
+        {
+            "name": "morluto/rea",
+            "url": "https://github.com/morluto/rea",
+            "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+            "language": "TypeScript",
+            "stars": 408719,
+            "forks": 102364,
+            "pushed_at": "2026-10-29T22:49:39Z"
+        },
+        {
+            "name": "EbookFoundation/free-programming-books",
+            "url": "https://github.com/EbookFoundation/free-programming-books",
+            "description": ":books: Freely available programming books",
+            "language": "Python",
+            "stars": 400502,
+            "forks": 67030,
+            "pushed_at": "2026-10-27T20:40:54Z"
+        },
+        {
+            "name": "openclaw/openclaw",
+            "url": "https://github.com/openclaw/openclaw",
+            "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
+            "language": "TypeScript",
+            "stars": 393397,
+            "forks": 82695,
+            "pushed_at": "2026-10-30T05:14:34Z"
+        },
+        {
+            "name": "nilbuild/developer-roadmap",
+            "url": "https://github.com/nilbuild/developer-roadmap",
+            "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+            "language": "TypeScript",
+            "stars": 370761,
+            "forks": 45160,
+            "pushed_at": "2026-10-28T12:18:10Z"
+        },
+        {
+            "name": "awesome-selfhosted/awesome-selfhosted",
+            "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+            "description": "A list of Free Software network services and web applications which can be hosted on your own servers",
+            "language": "",
+            "stars": 331883,
+            "forks": 15639,
+            "pushed_at": "2026-10-29T10:27:46Z"
+        },
+        {
+            "name": "vinta/awesome-python",
+            "url": "https://github.com/vinta/awesome-python",
+            "description": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
+            "language": "Python",
+            "stars": 331242,
+            "forks": 29032,
+            "pushed_at": "2026-10-29T12:38:48Z"
+        },
+        {
+            "name": "obra/superpowers",
+            "url": "https://github.com/obra/superpowers",
+            "description": "An agentic skills framework & software development methodology that works.",
+            "language": "Shell",
+            "stars": 308754,
+            "forks": 27466,
+            "pushed_at": "2026-10-29T23:35:34Z"
+        },
+        {
+            "name": "mattpocock/skills",
+            "url": "https://github.com/mattpocock/skills",
+            "description": "Skills for Real Engineers. Straight from my .agents directory.",
+            "language": "Shell",
+            "stars": 306763,
+            "forks": 25811,
+            "pushed_at": "2026-10-29T10:43:06Z"
+        }
+    ]
+}
